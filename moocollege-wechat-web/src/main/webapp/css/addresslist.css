@@ -1,0 +1,30 @@
+@charset "utf-8";
+/*通讯录*/
+.ml25{margin-left:25px}
+.w50{ width:50px;}
+.h34{ height:34px;}
+.user-ico01{width:20px;height:18px; background-position:0 -261px;}
+.txl-ico{width:18px;height:19px; background-position:0 -287px;}
+.jiantou{position:absolute;top:35%;right:17px;border-top:2px solid #bdc4cb;border-left:2px solid #bdc4cb;width: 8px;height: 8px;-webkit-transform:rotate(225deg);}
+.txl-list li{padding-left:42px;}
+.txl-tit{background:#fff;border-bottom:1px #ccc solid}
+.txl-tit a{padding:15px 0 12px;}
+.txl-tit .jiantou{-webkit-transform:rotate(134deg);top:45.2%}
+.txl-tit01{background:#fff; padding:10px 0 5px;border-bottom:1px #ddd solid}
+.txl01-list li{line-height:40px; height:40px; border-bottom:1px #ddd solid}
+.footerbar{position:fixed; left:0; bottom:0;right: 0; width:100%}
+.footerbar a{width:50%; color:#333}
+.footerbar a:first-child{border-right:1px #ccc solid}
+.txl02-list li{/*padding-left:15px; padding-right:5px*/}
+.bianji-ico{background-position:0 -312px; width:18px; height:19px}
+.guanbi{ width:14px; height:14px; border-radius:100px;-webkit-border-radius:100px;-moz-border-radius:100px; background:rgba(0,0,0,0.5) url(../images/cha.png) no-repeat center center; background-size:8px auto; top:50%; right:19px; margin-top:-7px; position:absolute;}
+.bianjiicon{width:21px;height:21px;background-position:0px -364px;top:3px;right:63px;}
+
+.fileInput02{width:60px;height:60px;background-size:30px 30px;overflow:hidden;position:absolute;top:0; left:0;z-index:5000}
+.upfile02{position:absolute;top:-100px;}
+.upFileBtn02{width:60px;height:60px;opacity:0;filter:alpha(opacity=0);cursor:pointer;}
+.xiangce{width:33px;height:33px;top:55px;left:56px;background:#fff;}
+/*select*/
+.mp-type{width:55px; display:inline-block;}
+.mp-type select{-webkit-appearance:none;width:100%;height:34px;background:#fff;border:0;-webkit-border-radius: 0;color: #2a2a2a;font-size:14px;}
+.mp-type:after{content: "";border-color:#3c3c3c transparent transparent;border-style: solid;border-width:5px;top:14px;right:0px;height:0px;position: absolute;width:0px;}

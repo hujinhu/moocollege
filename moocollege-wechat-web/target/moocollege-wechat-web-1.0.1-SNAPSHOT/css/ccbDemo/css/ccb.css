@@ -1,0 +1,240 @@
+.nav-header{ z-index:999}
+.navigation{ position:absolute; background:#fff;top:40px;width:100%;}
+.navigation li{height:50px;line-height:50px; width:50%; text-align:center; float:left; box-sizing:border-box;-webkit-box-sizing:border-box;font-size:14px;border-bottom:1px #ddd solid;border-right:1px #ddd solid;}
+.navigation li:nth-child(even){border-right:0}
+.navigation li a{ display:block}
+.navigation li.cur a{color:#00aaf0}
+.nav-header{
+    background: #00aaf0;
+    text-align: center;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+}
+.nav-header span{
+    color:#fff;
+    font-size: 14px;
+}
+.nav-left{
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    left: 7px;
+    top: 12px;
+    height: 20px;
+    line-height: 20px;
+    background: url(back.png) no-repeat;
+    background-size: auto 20px;
+    padding-left: 21px;
+}
+.nav-bread{
+    display: block;
+    width: 25px;
+    height: 20px;
+    background: url("../images/bread.png");
+    background-size: 25px;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    margin-top: -10px;
+}
+article{
+    padding-left: 15px;
+}
+section .formleft{
+    display: block;
+    float: left;
+    width: 32%;
+    font-size: 12px;
+    color: #333;
+    height: 30px;
+    line-height: 30px;
+}
+section .formlist{
+    position: relative;
+    padding: 10px 15px 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+.formlist input[type=radio]{
+    height: 15px;
+    width: 15px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.formright {
+    margin-left: 32%;
+    padding-top: 5px;
+    height: 25px;
+}
+.formright span{
+    display: inline-block;
+    margin-right: 40px;
+    position: relative;
+    top: -3px;
+    font-size: 14px;
+    color: #333;
+}
+.radio{
+    width: 15px;
+    height: 15px;
+    -webkit-appearance: none !important;
+    appearance: none;
+    background: #fff;
+    color: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+    border: 1px solid #ddd;
+    transition: all .5s ease;
+    border-radius: 50%;
+    -webkit-transition: all .5s ease;
+    position: relative;
+    margin-right: 5px;
+}
+
+.radio:checked::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    background: url('../images/on.png');
+    background-size: 15px;
+}
+section select{
+    display: block;
+    padding-left: 5px;
+    width: 68%!important;
+    margin-left: 32%;
+    background: #f5f5f5;
+    border-radius: 3px;
+    height: 30px;
+    -webkit-appearance: none;
+    position: relative;
+    border: 1px solid #ddd;
+}
+section select option{
+    background: #fff;
+}
+section .formselect:after,section .formselect:before {
+    content: '';
+    border: 8px solid transparent;
+    border-top: 10px solid #f5f5f5;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 18px;
+    right: 23px;
+    border-radius: 5px;
+    z-index: 10;
+}
+section .formselect:before {
+    border-top-color: #ddd;
+    top: 20px;
+}
+section label{
+    display: block;
+    width: 68%;
+    margin-left: 32%;
+    font-size: 14px;
+    color: #333;
+}
+section label input{
+    width: 82%;
+    height: 30px;
+    border: 1px solid #ddd;
+    background: #f5f5f5;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+section .nyr{
+    width: 68%;
+    margin-left: 32%;
+    font-size: 14px;
+    color: #333;
+}
+section .nyr input{
+    height: 30px;
+    line-height: 30px;
+    width: 40px;
+    border: 1px solid #ddd;
+    background: #f5f5f5;
+    border-radius: 3px;
+}
+.caozuo{
+    padding: 10px 30px;
+    overflow: hidden;
+    border-top: 1px solid #ddd;
+}
+.cesuan,.reset {
+    display: block;
+    width: 120px;
+    height: 35px;
+    border-radius: 3px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 15px;
+}
+.cesuan{
+    background: #64be50;
+    float: left;
+}
+.reset{
+    background: #bdc4cb;
+    float: right;
+}
+.cesuan a,.reset a{
+    display: block;
+    color: #fff;
+    font-size: 14px;
+}
+.cesuan a:hover,.reset a:hover{
+    text-decoration: none;
+}
+.formright{
+    height: 30px;
+}
+.result{
+    padding: 15px 0 15px 15px;
+    background: #eee; border-top:1px #ddd solid;
+}
+.result .formlist{
+    border-bottom: none!important;
+}
+.zclq{
+    padding: 10px 0;
+}
+.zclq label{
+    position: relative;
+    left: -5px;
+}
+.zclq label input{
+    padding: 0;
+    color: #999;
+    font-weight: bold;
+}
+.result .tip{
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    color: #999;
+    font-size: 12px; margin-top:4px;
+}
+.result .tip span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url("../images/info.png");
+    background-size: 12px;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+
+}
+.jine{
+    margin-left: 0!important;
+}
+

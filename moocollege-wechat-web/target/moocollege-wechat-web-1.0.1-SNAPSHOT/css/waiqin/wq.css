@@ -1,0 +1,90 @@
+@charset "utf-8";
+/*签到*/
+.bg-lv02{ background:#28be96}
+.mt36{ margin-top:36px}
+.bar {position: absolute;right: 0;left: 0;z-index: 10;height:35px; padding:0 15px;background-color:#eee;-webkit-backface-visibility: hidden;backface-visibility: hidden;}
+.bar-nav {top: 0;}
+.bar-title {position: absolute;display: block;width: 100%;font-size:16px;font-weight: 500;line-height:35px; margin:0 -15px;color: #333;text-align: center;white-space: nowrap; font-weight:bold; border-bottom:1px #ccc solid}
+.bar .button-link {height:35px; line-height:35px; position:relative;top:0;font-size:14px; padding-right:10px; display:inline-block;color:#666;border: 0;}
+.row{border:1px #ccc solid; background:#fff; border-left:0; border-right:0; font-size:14px}
+.row .rowju{display: -webkit-box;display: box;-webkit-box-pack: center;-webkit-box-align: center;}
+.row .l{ width:70px; overflow:hidden}
+.row ::-webkit-input-placeholder,.row1 ::-webkit-input-placeholder { /* WebKit browsers */color: #ccc;}
+/*上传相片*/
+.sp-photo{ margin-left:-17px;}
+.sp-photo li{ width:50px; margin: 12px 0 0 17px; padding:0; float:left; position:relative; border-bottom:0; text-align:center}
+.sp-photo li:last-child{ margin-right:0}
+.sp-photo li img{ width:50px; height:50px; margin-bottom:2px; display:block}
+.sp-photo .sp-ico{ position:absolute;right:-12px;top:-10px;}
+/*转审*/
+.content{padding:10px 15px; border-top:1px #ccc solid; border-bottom:1px #ccc solid;font-size:14px;}
+.content textarea{ border:0; resize:none; width:100%;min-height:100px; vertical-align:top; font-size:14px;}
+/*点评人*/
+.sp-user li{ width:50px; margin:10px 13px 0; float:left; position:relative; text-align:center}
+.sp-user li:last-child{ margin-right:0}
+.sp-user li img{ width:50px; height:50px; border-radius:50px;-webkit-border-radius:50px; display:block; margin-bottom:4px}
+.sp-user li p{ color:#333; font-size:12px}
+.sp-user li p.hui{ color:#999}
+.sp-user .sp-ico{ position:absolute;right:-12px;top:-4px;}
+
+.sp-ico{background:url(../../images/qingjia/qj_caoz.png) no-repeat;background-size:50px auto;}
+.sp-del{ background-position:0 -1px;width:25px; height:25px;}
+.sp-wait{background-position:-25px -1px;width:25px; height:25px;}
+.sp-pass{background-position:-25px -26px;width:25px; height:25px;}
+.sp-nopass{background-position:-25px -52px;width:25px; height:25px;}
+.sp-user1{ margin-left:-17px}
+.sp-user1 li{margin:12px 0 0 17px; text-align:center}
+
+/*地址*/
+.list-block{border-bottom:1px #ccc solid; background:#fff; padding-left:15px}
+.list-block li{position: relative;display:-webkit-box;display:box;
+-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;padding-top:10px;padding-right:15px;padding-bottom:9px;border-bottom:1px #ccc solid}
+.list-block li:last-child{ border-bottom:0}
+.list-block li a{display:-webkit-box;display:box;width:100%;-webkit-box-pack: justify;box-pack: justify;-webkit-box-align: center;box-align: center;}
+.list-block li .p1{ font-size:14px; color:#666}
+.list-block li .p2{ padding-top:2px;color:#bbb}
+.list-block .pic img{ width:12px}
+/*签到记录*/
+.card-content{padding:10px 15px; color:#fff;display:-moz-box;display:-webkit-box;display:box;}
+.card-content .photo{ width:50px; height:50px;border-radius:50px;-webkit-border-radius:50px;}
+.card-content .inner{ padding:6px 0 0 10px}
+.card-content .name{ font-size:16px; font-weight:bold; padding-bottom:4px}
+.item-dl{ padding-bottom:3px; line-height:18px}
+.item-dl dt{ color:#999; display:inline}
+.item-dl dd{ color:#333; display:inline; font-size:14px;word-wrap: break-word;word-break: break-all;}
+.photo-box{ margin-left:-15px; padding:5px 0 13px;}
+.photo-box img{ width:50px; height:50px; float:left; margin-left:15px; display:block}
+.qiandao{ background:#f5f5f5; padding:7px 10px; color:#999; margin:0 0 10px; line-height:18px}
+/*签到列表*/
+.conlist li{ padding:6px 15px 0; background:#fff; border-bottom:1px #ddd solid; border-top:1px #ddd solid; margin-top:6px; position:relative}
+.conlist li .txt{font-size: 15px;border-bottom: 1px #ddd dashed;padding-bottom: 6px;display:-webkit-box;display:box;margin-bottom:12px;-webkit-align-items: center;-webkit-box-align: center;
+align-items: center;}
+.conlist li .txt .img{ width:50px; height:50px;-webkit-border-radius:50px; border-radius:50px;display:block}
+.conlist .font{ margin-left:10px;-webkit-box-flex:1;box-flex:1;}
+.conlist .p1{ color:#333; font-size:14px;line-height:20px}
+.conlist .p2{ color:#999; font-size:12px; padding-top:2px; font-family:Arial, Helvetica, sans-serif}
+.conlist li .link{ margin:0 -15px;display:-moz-box;display:-webkit-box;display:box;}
+.conlist li .link a{-moz-box-flex:1;-webkit-box-flex:1;box-flex:1;color:#00aaf0; cursor:pointer;line-height:40px; background:#fff; display:block; border-top:1px #ddd solid;border-right:1px #ccc solid; text-align:center;font-size:15px}
+.conlist li .link a:last-child{ border-right:0}
+/*选项卡*/
+.navlist{display:-moz-box;display:-webkit-box;display:box;}
+.navlist a{-moz-box-flex:1;-webkit-box-flex:1;box-flex:1; color:#333; cursor:pointer;line-height:40px; background:#fff; display:block; border-bottom:1px #ccc solid; border-right:1px #ccc solid; text-align:center;font-size:15px}
+.navlist a:last-child{ border-right:0}
+.navlist a.cur{ color:#28be96; border-bottom:3px #28be96 solid}
+/*地图*/
+.map-jilu{position: absolute;width:25%; height:28px; line-height:28px; font-size:14px; border-radius:4px 0 0 4px; text-align:center; color:#fff; background:#2fb2e8;bottom: 12px;right:0px;}
+.amap-copyright,.amap-info-close{ display:none}
+.amap-info-content{ width:220px; height:auto !important}
+
+
+.map-arrow{ position:absolute;right:15px;top:50%;-webkit-transform: translate(0,-105%);-ms-transform: translate(0,-105%);transform: translate(0,-105%); width:14px;}
+.map-arrow img{ width:11px}
+.amap-info-sharp{background:url(../../images/waiqin/ditu-arrowb.png) no-repeat;background-size:18px auto;width:18px; height:10px;left:-15px;top:-3px;}
+.amap-info-content{border-radius:8px;padding: 10px 28px 10px 10px; border: 1px solid #d9d9d9;}
+.amap-info-outer, .amap-menu-outer {
+    box-shadow:none;
+    text-align: left;
+}
+
+
+

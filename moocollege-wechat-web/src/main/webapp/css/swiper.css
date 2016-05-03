@@ -1,0 +1,92 @@
+/*
+ * Swiper - Mobile Touch Slider CSS
+ * http://www.idangero.us/sliders/swiper
+ *
+ * Vladimir Kharlampidi, The iDangero.us
+ * http://www.idangero.us/
+ * 
+ * Copyright 2012-2013, Vladimir Kharlampidi
+ * The iDangero.us
+ * http://www.idangero.us
+ *
+ * Licensed under GPL & MIT
+ *
+*/
+
+/* ===============================================================
+Basic Swiper Styles 
+================================================================*/
+.swiper-container {
+	margin:0 auto;
+	position:relative;
+	overflow:hidden;
+	width:100%;
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden;
+	-ms-backface-visibility:hidden;
+	-o-backface-visibility:hidden;
+	backface-visibility:hidden;
+	/* Fix of Webkit flickering */
+	z-index:1;
+}
+.swiper-wrapper {
+	position:relative;
+	width:100%;
+	-webkit-transition-property:-webkit-transform, left, top;
+	-webkit-transition-duration:0s;
+	-webkit-transform:translate3d(0px,0,0);
+	-webkit-transition-timing-function:ease;
+	
+	-moz-transition-property:-moz-transform, left, top;
+	-moz-transition-duration:0s;
+	-moz-transform:translate3d(0px,0,0);
+	-moz-transition-timing-function:ease;
+	
+	-o-transition-property:-o-transform, left, top;
+	-o-transition-duration:0s;
+	-o-transform:translate3d(0px,0,0);
+	-o-transition-timing-function:ease;
+	-o-transform:translate(0px,0px);
+	
+	-ms-transition-property:-ms-transform, left, top;
+	-ms-transition-duration:0s;
+	-ms-transform:translate3d(0px,0,0);
+	-ms-transition-timing-function:ease;
+	
+	transition-property:transform, left, top;
+	transition-duration:0s;
+	transform:translate3d(0px,0,0);
+	transition-timing-function:ease;
+}
+.swiper-free-mode > .swiper-wrapper {
+	-webkit-transition-timing-function: ease-out;
+	-moz-transition-timing-function: ease-out;
+	-ms-transition-timing-function: ease-out;
+	-o-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+	margin: 0 auto;
+}
+.swiper-slide {
+	float: left;
+}
+
+/* IE10 Windows Phone 8 Fixes */
+.swiper-wp8-horizontal {
+	-ms-touch-action: pan-y;
+}
+.swiper-wp8-vertical {
+	-ms-touch-action: pan-x;
+}
+#container01 img{width:100%; max-width:100%;}
+.swiper-pagination-switch{display: inline-block;width:8px;height:8px;border-radius: 10px;background: #fff;margin: 0 4px;cursor: pointer;}
+.swiper-active-switch{ background:#00aaf0}
+.pagination {position: absolute;left: 0;text-align: center;bottom:5px;width: 100%;}
+
+.slide_nav {position: absolute;-webkit-tap-highlight-color: rgba(0,0,0,0);top: 50%;left:-6px;opacity: 0.7;z-index: 3;text-indent: -9999px;
+  overflow: hidden;text-decoration: none;height:50px;width:27px;background: transparent url("../images/themes.gif") no-repeat -9px top;margin-top: -25px;border-radius:2px;}
+
+.slide_nav.next {left: auto;background-position: -66px top;right:-6px;}
+
+.page-cur{color:#fff; background:#a6a6a6; border-radius:20px 0 0 20px;width:44px;text-align:center;position:absolute;top:10px;right:0;z-index:10000}
+
+.loading_img{background: url(../images/loading_gif.gif) no-repeat center center;background-size: 32px auto;}

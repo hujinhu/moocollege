@@ -1,0 +1,171 @@
+@charset "utf-8";
+/* CSS Document */
+/* public */
+i{ font-style:normal;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.l-s-1{ letter-spacing:1px;}
+/* public */
+
+
+
+#footer{
+			width:904px;
+		}
+#info{
+			width:872px;
+		}
+#top_menu_line_1{
+			background: url("http://www.ccb.com/cn/personal/images/top_menu_line.png") repeat-x scroll left top;
+			height: 25px; 
+			width:904px;
+			margin-left:auto;
+			margin-right:auto;
+		}
+#wrapper_904{ margin: 0 auto; width: 904px; }
+#head{ height:97px; margin:0 auto;}
+#head .logo{ float: left; height: 77px; padding-right: 30px; padding-top: 20px; text-align: right; width: 300px;}
+#head .r{ float: right; height: 97px; width: 400px;}
+#head .r .search{clear: both; display: block; height: 25px; overflow: hidden; padding-top: 24px; text-align: right;}
+#head .r .search ul{ margin:0; padding:0;}
+#head .r .search ul li{ background-color: #ffffff; display: block; float: right; height: 20px; line-height: 20px; padding-left: 20px; text-align: left;}
+#head .r .search a{ color: #0066b3; text-decoration: none;}
+.head_b_input_text{ background-image: url("../images/input_text_bg_159.gif"); border: medium none; color: #919191; display: inline-block; height: 16px; line-height: 19px; margin: 0 9px 0 17px; overflow: hidden; padding: 2px 4px; vertical-align: middle; width: 151px;
+}
+.head_b_input_text .head_b_input_text {background-color: transparent; background-image: none; height: 14px; line-height: 14px; margin: 0; padding: 2px 0 0;}
+.button_search{ background: url("../images/button_search.gif") no-repeat; border: medium none; cursor: pointer; display: inline-block; height: 20px; margin-right: 10px; vertical-align: middle; width: 39px;}
+.button_search_hover { background: url("../images/button_search.gif") no-repeat scroll 0 -20px transparent; border: medium none; cursor: pointer; display: inline-block; height: 20px; margin-right: 10px; vertical-align: middle; width: 39px;}
+.button_search_advance { background: url("../images/button_search_advance.gif") no-repeat; border: medium none; cursor: pointer; display: inline-block; height: 20px; vertical-align: middle; width: 39px;}
+.button_search_advance_hover{ background: url("../images/button_search_advance.gif") no-repeat scroll 0 -20px transparent; border: medium none; cursor: pointer;display: inline-block; height: 20px; vertical-align: middle; width: 39px;}
+.head_b_right_top_right_1 { margin-left: 9px;}
+
+#head .r .link{ clear: both; overflow: hidden; padding-top: 14px; text-align: right;}
+#head .r .link ul{ }
+#head .r .link ul li{ float:right; line-height: 22px; padding-left: 15px;}
+#head .r .link ul li.icon{ background: url("../images/icon_redarrow.gif") no-repeat right; padding-right:20px;}
+
+#top_menu_line { background: url("../images/top_menu_line.png") repeat-x scroll left top; height: 15px;}
+
+#cont{height:auto; overflow:hidden;}
+#cont .left{ width:225px; height:auto; overflow:hidden; float:left;}
+#cont .left .b1{ background: url("../images/login2.jpg") no-repeat; width:225px; height:264px;}
+#cont .left .b1 ul{ padding-top:20px; margin:0 auto; width:183px;}
+#cont .left .b1 ul li{ padding-top:15px;}
+#cont .left .b1 .btn01{ background: url("../images/btn_login1.gif") no-repeat; width:183px; height:39px; display: block;}
+#cont .left .b1 .btn02{ background: url("../images/btn_login2.gif") no-repeat; width:183px; height:39px; display: block;}
+#cont .left .b1 .btn03{ background: url("../images/btn_login3.gif") no-repeat; width:183px; height:39px; display: block;}
+#cont .left .b1 .btn04{ background: url("../images/btn_login4.gif") no-repeat; width:183px; height:39px; display: block;}
+#cont .left .b2{ width:225px; height:auto; overflow:hidden; margin-top:5px;}
+.cbga ul li span{ background:url("http://www.ccb.com/cn/personal/images/side_nav_btn_bg_submenu.png") no-repeat 0 0; padding-left:23px; width:202px; height:25px; display:inline-block; /*line-height:25px;*/ line-height:27px;}
+.cbga ul li span a{ background:url("http://www.ccb.com/cn/personal/images/arrow.png") no-repeat 0 0; padding-left:17px; font-weight:bold; display:block; height:25px;cursor: pointer;}
+.cbga ul li .active{ background:url("http://www.ccb.com/cn/personal/images/side_nav_btn_bg_submenu.png") no-repeat 0 -50px;}
+.cbga ul li .active1{ background-position:0 -22px!important;}
+.cbga ul li .active2{ background-position:0 -25px!important;}
+.cbga ul li .active3{ background:url(http://www.ccb.com/cn/personal/images/arrow_red.png) no-repeat 3px 11px; width:161px;}
+.cbga ul li .active3 a{ color:#000; font-weight:bold;}
+.cbga ul li .active3 a:hover{ text-decoration:none;}
+.cbga ul li .active4{ background:url(http://www.ccb.com/cn/personal/images/side_nav_btn_bg.png) no-repeat 0 -26px; height:24px; width:202px;}
+.cbga ul li .active4 a{ color:#000;}
+.cbga ul li .active4 a:hover{ text-decoration:none;}
+
+.cbga ul li a{ color:#0066b3; display:block;}
+.cbga ul li ul li{ background-color:#D7E8F8; width:225px; *width:auto!important; min-height:30px; *min-height:auto!important; height:auto; border-top:1px solid #fff;}
+.cbga ul li ul li i{ background:url("http://www.ccb.com/cn/personal/images/arrow.png") no-repeat 0 3px; line-height:20px; /*padding:5px 0 3px 17px;*/ padding:6px 0 4px 17px; margin-left:40px; display:block; cursor: pointer;}
+.cbga ul li ul li p{ padding-bottom:5px; *padding-bottom:3px!important;}
+.cbga ul li ul li p a{ display:block; margin-left:56px; padding:0 0 8px 12px; *padding:0 0 8px 12px!important;}
+.cbga ul li ul li p a.current{ /*background:url(../images/arrow_red.png) no-repeat 0 6px;*/ background:url(http://www.ccb.com/cn/personal/images/arrow_red.png) no-repeat 0 4px; color:#000; font-weight:bold;}
+.cbga ul li ul li p a.current:hover{ text-decoration:none;}
+
+#cont .right{ width:657px; float:left; margin-left:22px;}
+#cont .right .location{ padding-top:10px; height:20px; margin-bottom:10px;}
+#cont .right .location ul li{ float:left; padding-right:4px;}
+#cont .right .title{ text-align:center; border-top:1px solid #d6d6d6; border-left:1px solid #d6d6d6; border-right:1px solid #d6d6d6; height:30px; line-height:30px; font-size:14px; font-weight:bold;}
+#cont .right table{ width:100%; margin:0 auto 9px;}
+#cont .right table tr td{ border:1px solid #d6d6d6; width:50%; height:30px; line-height:30px; padding-left:10px; font-family:"宋体";}
+#cont .right table tr td .select{ margin:5px 0 0 0; float:left;}
+#cont .right table tr td .select p{}
+#cont .right table tr td .select select{ width:97px; height:20px; font-size:12px;}
+#cont .right table tr td .shuoming{ float:left; padding-left:10px;}
+#cont .right table tr td .data{ float:right; padding-right:10px;}
+
+#cont .right table.wbckll{ margin-bottom:9px;}
+#cont .right table.wbckll tr td{ width:94px; text-align:center; padding:0;}
+
+/*人民币贷款基础利率（LPR）*/
+.t_about a{ color: #0066b3; font-weight:bold;}
+.t_about a:hover{ color:#3992e2;}
+.t_about a:hover span{ background-position:0 -30px;}
+.t_about a:hover span.cur{ background-position:-7px -30px;}
+.t_about span{ background: url("http://www.ccb.com/cn/personal/images/arr_double_blue.png") no-repeat; width:7px; height:7px; display:inline-block; margin-left:4px; cursor:pointer;}
+.t_about .cur{ background-position:-7px 0;}
+
+/*理财计算器*/
+.lcjsq .top{ background:url("http://www.ccb.com/cn/personal/images/jsq_bg_t.png") no-repeat; width:657px; height:4px;}
+.lcjsq .c{ background:url("http://www.ccb.com/cn/personal/images/jsq_bg_c.png") repeat-y; width:635px; height:auto; overflow:hidden; padding:17px 11px 7px;}
+.lcjsq .c .t01{ background:url("http://www.ccb.com/cn/personal/images/jsq_icon.png") no-repeat 0 0; height:26px; font-size:20px; font-family:"黑体"; line-height:26px; padding-left:39px; font-weight:bold;}
+.lcjsq .c .t02{ background-position:0 -26px;}
+.lcjsq .c .t03{ background-position:0 -52px;}
+.lcjsq .c .t04{ background-position:0 -78px;}
+.lcjsq .c .cbg{ background:url("http://www.ccb.com/cn/personal/images/jsq_bg_c_jb.png") repeat-x 0 0; padding:0 10px;}
+.lcjsq .c .cont{ border-top:1px solid #8CB7E2; border-bottom:1px solid #8CB7E2; margin:8px 0 16px; overflow:hidden;}
+.lcjsq .c .cont .box{ float:left; padding:15px 20px; }
+.lcjsq .c .cont .box .t{ /*background:url("../images/jsq_arrow2.png") no-repeat 0 8px;*/ padding-left:16px; margin-bottom:18px;}
+.lcjsq .c .cont .box div{ padding:0 0 10px 16px; line-height:22px;}
+.lcjsq .c .cont .box div.btn{ padding:10px 0 10px 74px;}
+.lcjsq .c .cont .box div.gp{ padding:0 0 10px 24px; line-height:22px;}
+.lcjsq .c .cont .box div.gpbtn{ padding:0 0 10px 82px;}
+.lcjsq .c .cont .box .radio{ width:auto; height:auto; float:left; margin:3px 5px 0 10px; border:none;}
+.lcjsq .c .cont .line{ background:url("http://www.ccb.com/cn/personal/images/jsq_line.png") repeat-y 0 0; width:5px; float:left; position:relative; margin:0 12px 0 28px;}
+.lcjsq .c .cont .line .arrow{ background:url("http://www.ccb.com/cn/personal/images/jsq_arrow.png") no-repeat 0 0; width:10px; height:20px; position:absolute; left:4px;}
+.lcjsq .c .link{ padding:0 0 30px 36px;}
+.lcjsq .c .link a{ padding-left:19px;}
+.lcjsq .bottom{ background:url("http://www.ccb.com/cn/personal/images/jsq_bg_b.png") no-repeat; width:657px; height:4px;}
+
+.lcjsq p.button_bg{ background:url("http://www.ccb.com/cn/personal/images/button_bg2.jpg") no-repeat; width:60px; height:24px; line-height:24px; text-align:center; float:left; margin-right:10px;}
+.lcjsq p.button_bg a{ color:#fff; display:block;}
+.lcjsq p.button_bg a:hover{ text-decoration:none;}
+.lcjsq input{ width:128px; height:20px; line-height:20px; border:1px solid #999; margin-left:10px;}
+.lcjsq select{ width:130px; height:22px; margin-left:10px;}
+
+/*公共*/
+.f_12_gray{ color:#919191; font-family:"宋体";}
+.f_12_blue { color: #0066b3;}
+.f_14{ font-size:14px;}
+.f_b{ font-weight:bold;}
+.f_ht{ font-family:"黑体"; font-weight:normal;}
+.margintop4{ margin-top:4px;}
+.l-h-25{ line-height:25px;}
+.dian{ background:url(../images/dian.jpg) no-repeat 0 10px; padding-left:10px;}
+.dian1{ background:url(../images/dian.jpg) no-repeat 0 14px;}
+.pbd_table_form_date_input{border: 1px solid #a0a0a0;
+    font-size: 12px;
+    height: 18px;
+    line-height: 18px;
+    margin: 1px 0 0;
+    padding: 0 0 0 5px;
+    width: 77px;}
+.pbd_table_form_date_icon {
+    display: inline-block;
+    height: 20px;
+    padding: 0 0 0 5px;
+    vertical-align: top;
+}
+.qingkong{ visibility:hidden;}
+
+
+#footer{ width:904px; height:auto; overflow:hidden; margin:10px auto 0;}
+#footer .line{ background:url("../images/bg_footer.gif") repeat-x; height:3px; margin-bottom:10px;}
+#footer .lat{ height:auto; overflow:hidden;}
+#footer .lat .logo{ background:url("../images/icon_footer.png") no-repeat; width:22px; height:28px; float:left;}
+#footer .lat .text{ float:left; padding-left:10px; font-family: Arial;}
+#footer .lat .ylink{ float:right;}
+#footer .lat .ylink a{ color: #0066b3; padding-right:10px; cursor:pointer;}
+
+/*firefox hack*/
+@-moz-document url-prefix(){
+	
+.cbga ul li span{ line-height:24px; }
+.cbga ul li ul li i{ padding:5px 0 3px 17px; }
+.cbga ul li ul li p a.current{ background:url(http://www.ccb.com/cn/personal/images/arrow_red.png) no-repeat 0 6px;}
+.l-s-1{ letter-spacing:0;}
+}
+/*firefox hack end*/

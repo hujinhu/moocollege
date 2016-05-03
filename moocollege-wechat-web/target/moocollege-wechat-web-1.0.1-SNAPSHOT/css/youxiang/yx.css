@@ -1,0 +1,205 @@
+@charset "utf-8";
+/*邮箱底图*/
+#wrap {height: auto; min-height: 100%;}
+#main {padding-bottom: 106px;}  /* 必须使用和footer相同的高度 */
+#yxbg {position: relative;margin-top: -106px; /* footer高度的负值 */height: 106px; background:#039;clear:both; z-index:-1}
+#yxbg img{ height:106px} 
+/*邮箱*/
+.row1:last-child a{ border-bottom:0}
+.row1 .arrow{ right:15px;}
+.row1 a{ border-bottom:1px #ddd solid; color:#333;display: -webkit-box;-webkit-box-orient: vertical;-webkit-box-pack: center;
+font-size:16px; padding:14px 15px 13px 0;margin:0 0 0 15px;}
+.row1 a.link1{ padding:14px 15px 14px 30%}
+.row2 li{ border-bottom:1px #ccc solid; padding:0 15px 0 0; line-height:44px; margin:0 0 0 15px;display: -webkit-box;display: box;}
+.row2 li:last-child{ border-bottom:0}
+.row2 .label {width:50px;display: inline-block;color: #333; font-size:16px}
+.row2 .label1{ width:95px}
+.row2 input{font-family:Arial, Helvetica, sans-serif}
+.row2 input::-webkit-input-placeholder {color:#999;font-family:Arial, Helvetica, sans-serif}
+
+.track {position:relative; margin-top:7px;display:inline-block;background: #4dd865;width:55px;height:31px; line-height:31px;border-radius:55px;cursor: pointer;-webkit-box-sizing: border-box;box-sizing: border-box;}
+
+
+.indicator { position:absolute;background: #fff;height:33px;width:32px;top:-2px;right:0px;background:url(../../images/youxiang/switch.png) no-repeat;background-size:32px auto;}
+.track.switch-off{ background:#fff; border:2px #ccc solid}
+.track.switch-on .indicator{-webkit-animation:switch-on .3s;-moz-animation:switch-on .3s;-ms-animation:switch-on .3s;animation:switch-on .3s;-o-animation:switch-on .3s;-webkit-animation-fill-mode:forwards;-ms-animation-fill-mode:forwards;-o-animation-fill-mode:forwards;-ms-animation-fill-mode:forwards;animation-fill-mode:forwards;}
+.track.switch-off .indicator{-webkit-animation: switch-off .3s;-moz-animation: switch-off .3s;-ms-animation: switch-off .3s;animation: switch-off .3s;-o-animation:switch-off .3s;-webkit-animation-fill-mode: forwards;-ms-animation-fill-mode:forwards;-o-animation-fill-mode:forwards;-ms-animation-fill-mode:forwards;animation-fill-mode: forwards;top:-4px;}
+@keyframes switch-on {
+  0% {
+    left:-2px;
+  }
+  100% {
+    left:42%;
+  }
+}
+@keyframes switch-off {
+  0% {
+    left:45%;
+  }
+  100% {
+    left:-2px;
+  }
+}
+@-webkit-keyframes switch-on {
+  0% {
+    left:-2px;
+  }
+  100% {
+    left:42%;
+  }
+}
+@-webkit-keyframes switch-off {
+  0% {
+    left:45%;
+  }
+  100% {
+    left:-2px;
+  }
+}
+@-webkit-keyframes switch-on {
+  0% {
+    left:-2px;
+  }
+  100% {
+    left:42%;
+  }
+}
+@-ms-keyframes switch-off {
+  0% {
+    left:45%;
+  }
+  100% {
+    left:-2px;
+  }
+}
+@-ms-keyframes switch-on {
+  0% {
+    left:-2px;
+  }
+  100% {
+    left:42%;
+  }
+}
+@-o-keyframes switch-off {
+  0% {
+    left:45%;
+  }
+  100% {
+    left:-2px;
+  }
+}
+@-o-keyframes switch-on {
+  0% {
+    left:-2px;
+  }
+  100% {
+    left:42%;
+  }
+}
+.yx-link{ line-height:44px; font-size:16px; display:block; background:#fff;text-align:center;border-top:1px #ccc solid; border-bottom:1px #ccc solid;}
+.yx-icon{background:url(../../images/youxiang/yx-icon.png) no-repeat;background-size:25px auto;}
+.yx-qy{ width:24px; height:24px; background-position:0 0; display:inline-block; vertical-align:middle; margin-right:5px}
+.yx-qq{ width:24px; height:24px; background-position:0 -25px; display:inline-block; vertical-align:middle; margin-right:5px}
+.yx-exch{ width:24px; height:24px; background-position:0 -50px; display:inline-block; vertical-align:middle; margin-right:5px}
+.yx-163{ width:24px; height:24px; background-position:0 -75px; display:inline-block; vertical-align:middle; margin-right:5px}
+.yx-126{ width:24px; height:24px; background-position:0 -100px; display:inline-block; vertical-align:middle; margin-right:5px}
+.yx-gmail{ width:24px; height:24px; background-position:0 -125px; display:inline-block; vertical-align:middle; margin-right:5px}
+.yx-outlook{ width:24px; height:24px; background-position:0 -150px; display:inline-block; vertical-align:middle; margin-right:5px}
+.yx-qi{ width:24px; height:24px; background-position:0 -175px; display:inline-block; vertical-align:middle; margin-right:5px}
+
+/*邮箱详情*/
+.yxtop{background:url(../../images/youxiang/yxtit.png) repeat-x; height:6px;background-size:25px auto;}
+.yx-zk{display: -webkit-box;display: box; font-size:14px; padding:0 15px; margin-bottom:4px}
+.yx-zk .yxtitle{ color:#999; width:57px; line-height:22px;display:inline-block; text-align:right}
+.yxli{ margin:0 -10px 0 -5px}
+.yxli li{ vertical-align:top;border:1px #67ad03 solid; color:#67ad03; border-radius:18px; margin-left:5px; margin-bottom:5px;display:inline-block; line-height:22px; padding:0 5px}
+/*我的邮箱*/
+.myyx-ul{ margin-top:-10px}
+.myyx-box{ border-bottom:1px #ccc solid;border-top:1px #ccc solid; padding-left:15px; background:#fff; margin-top:10px;}
+.myyx-box .ts{ color:#ff6600; background:#ffff99; line-height:24px; text-align:center; margin-left:-15px}
+.myyx-box .ts a{ color:#0099cc;text-decoration:underline;}
+.myyx .yx{ line-height:45px;border-bottom: 1px #ddd solid;color: #333;display: -webkit-box;-webkit-box-orient: vertical;-webkit-box-pack: center;font-size: 16px;}
+.yx-cz{display: -webkit-box; padding:20px 0 14px 22px;-webkit-box-align: center;-webkit-box-pack:center;}
+.yx-cz li{text-align:center; width:33.33%}
+.yx-cz li a{ width:60px; display:block}
+.yx-cz li .tu{ width:60px; height:60px; line-height:60px; text-align:center; border-radius:60px; border:1px #ccc solid; position:relative}
+.yx-cz li .num{position: absolute;right: -4px;top:-1px; height:18px; line-height:18px; background:#ff3300;border-radius:20px; color:#fff; padding:0 6px;}
+.yx-cz li .tu img{ vertical-align:middle;}
+.yx-cz li .font{ padding-top:8px}
+/*收件箱*/
+.email-list{overflow:hidden;}
+.email-list li{position:relative;display: -webkit-box;  padding:0 0 0 75px;border-bottom:1px #ccc solid;}
+.email-list li.cur{background:#f5f5f5;}
+.email-list li.cur a{ border:0;}
+.email-list .touxiang-box{width:50px; padding:8px 10px 8px 15px; text-align:center; background:#fff;position:absolute;left:0;top:0; height:72px;}
+.email-list li.cur .touxiang-box{background:#f5f5f5;border-top:1px #ccc solid; border-bottom:1px #ccc solid;top:-1px; height:70px}
+
+.email-list .touxiang{ width:40px; height:40px; position:relative; margin-bottom:7px}
+.email-list .touxiang .moren{ border:1px #00aaf0 solid; width:40px; height:40px; line-height:40px; box-sizing:border-box; -webkit-box-sizing:border-box;text-align:center; font-size:18px; color:#1dacec; font-family:Arial, Helvetica, sans-serif;border-radius:40px;}
+.email-list li.cur .touxiang span{width:40px; height:40px; position:absolute;left:0;top:0;background:url(../../images/youxiang/chosen.png) no-repeat;background-size:40px auto;}
+
+.email-list .btline{ border-top:1px #ccc solid; margin-top:-1px}
+.email-list .touxiang img{width:40px; height:40px; border-radius:40px}
+.email-list .gao{display: -webkit-box;-webkit-box-orient: vertical;-webkit-box-pack: center;padding:0 15px 0 0; overflow:hidden; height:86px;}
+
+.email-list a{ display:block;-webkit-box-flex:1;box-flex:1;}
+.email-list .name{ font-size:16px; line-height:20px; color:#333; padding:2px 20px 0 0;}
+.email-list h2{ color:#333; padding:1px 0 0; font-size:15px;}
+.email-list .txt{ font-size:13px; color:#999; padding-top:2px;text-overflow: -o-ellipsis-lastline;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+.email-list .email-fujian{ margin:3px 2px 0 0px}
+.visit{ background:#f00; width:12px; height:12px; border-radius:12px;-webkit-border-radius:12px; display:inline-block; margin-right:4px}
+.email-list li .operation{width:150px;height:88px;line-height:88px;position:absolute;top:-1px;right:-150px;text-align:center; font-size:16px;display: -webkit-box;}
+.email-list li .operation-biaoji{width:90px; background:#ccc;color:#fff}
+.email-list li .operation-del{width:60px; background:#ff3300;color:#fff}
+
+
+
+.panLeft{-webkit-animation: toleft 0.7s ease forwards;}
+@-webkit-keyframes toleft{
+	0% { left:0px;}
+	100% {left:-150px;}
+	}
+.panright{-webkit-animation: toright 0.7s ease forwards;}
+@-webkit-keyframes toright{
+	0% {left:-150px;}
+	100% {left:0px;}
+	}
+.email-fujian{ width:14px; height:13px;background:url(../../images/fujian1.png) no-repeat;background-size:13px auto;display:inline-block;}
+.email-write{ width:19px; height:19px;background:url(../../images/youxiang/writeblue.png) no-repeat;background-size:19px auto;display:inline-block;}
+/*头像提示*/
+#txts{ position:absolute;z-index:999;top:1px;left:14px}
+/*搜索*/
+.isearch{ background:#eee; padding:6px 15px; position:relative; z-index:997;} 
+.isearch .search-box{ line-height:34px; text-align:center;height:34px;background:#fff; border-radius:30px;padding-right:4px}
+.isearch .search-open form{ width:100%;-webkit-transition:all 0.3s;transition:all 0.3s;-webkit-backface-visibility: hidden;}
+.isearch form{display: -webkit-box; width:70px;margin:0 auto }
+.isearch .search-open .isearch-ico{ margin-left:8px}
+.isearch .input-box{ text-align:left;-webkit-box-flex:1;box-flex:1;}
+.isearch-input{margin-top:8px;border: none;outline: none;background: #fff;height:20px;z-index: 10;font-size:15px;color: #333;border-radius:30px; width:100%; font-family:Arial, Helvetica, sans-serif}
+.isearch-ico{background:url(../../images/isearch.png) no-repeat;background-size:20px auto; width:20px; height:20px; display:inline-block; vertical-align:middle; margin-right:6px;}
+.search-bg{background-color:#000; filter:alpha(opacity=30); -moz-opacity:0.3; opacity:0.3; position:fixed;left:0;top:0;width:100%;height:100%;z-index:996;}
+
+/*写邮件*/
+.yx-write{display: -webkit-box;display: box; font-size:14px; vertical-align:top; padding:12px 15px 12px 0; border-bottom:1px #ddd solid}
+.yx-write-l{color:#999; width:57px; line-height:22px;display:inline-block; text-align:right}
+.yx-write-r{-webkit-box-flex:1;box-flex:1;}
+.yxadd{ vertical-align:middle; display:none}
+.addressee-box{ background:#f5f5f5;margin-top:-1px; margin-left:-15px}
+.addressee-box h3{ line-height:28px; background:#eee; font-weight:normal; padding-left:15px; border-bottom:1px #ccc solid;border-top:1px #ccc solid;}
+
+.addressee-list{ padding-left:15px;}
+.addressee-list li{ border-bottom:1px #ccc solid; padding:10px 15px 10px 0;}
+.addressee-list li a{display: -webkit-box;}
+.addressee-list li .xm{ font-size:16px; padding-bottom:4px; color:#333}
+
+.yxselect{display:-webkit-box;display:box; font-size:15px}
+.yxselect .people{-webkit-box-flex:1;box-flex:1; margin-left:-5px; margin-bottom:-10px}
+.yxselect a{}
+/*上传相片*/
+.sp-photo{ margin-left:-17px}
+.sp-photo li{ width:50px; margin: 12px 0 0 17px; padding:0; float:left; position:relative; border-bottom:0; text-align:center}
+.sp-photo li:last-child{ margin-right:0}
+.sp-photo li img{ width:50px; height:50px; margin-bottom:2px; display:block}
+.sp-photo .sp-ico{ position:absolute;right:-12px;top:-10px;}
+.sp-ico{background:url(../../images/qingjia/qj_caoz.png) no-repeat;background-size:50px auto;}
+.sp-del{ background-position:0 -1px;width:25px; height:25px;}

@@ -1,0 +1,96 @@
+
+.sort-list {
+
+}
+.sort-list .sitem {
+
+}
+.sort-list .sitem > a {
+  background-color: #f3f4f6;
+  color: #666666;
+  font-size: 14px;
+  display: block;
+  outline: none;
+  padding: 0 15px;
+ /*  height: 22px; */
+  line-height: 22px;
+}
+.sort-list .sitem.other > a {
+  display: none;
+}
+.sort-list .sitem > a span {color: #999999; font-size: 12px;}
+.sort-list .sitem li {
+  margin-left: 15px;
+  padding: 6px 0
+}
+.sort-list .sitem ul {
+  border-top: 1px #cccccc solid;
+  border-bottom: 1px #cccccc solid;
+}
+.sort-list .sitem li + li {
+  border-top: 1px #cccccc solid;
+}
+.sort-list .sitem li i {
+  display: inline-block;
+  height: 17px;
+  width: 17px;
+  margin: 13px 15px 13px 0;
+  float: right;
+  background: url('../images/sort-list-icon.png') no-repeat 0px -17px;
+  background-size: 100% auto;
+}
+.sort-list .sitem1 li{position:relative;}
+.sort-list .sitem1 li .operation-del{position:absolute;top:-1px;right:-60px;text-align:center;width:60px; height:55px; line-height:55px; font-size:14px;background:#e7524e;color:#fff;}
+
+.sort-list .sitem li.selected i {
+  background-position: 0px 0;
+}
+.sort-list .sitem .name {
+  color: #333333;
+  font-size: 16px;
+  display: block;
+}
+
+
+/** scrollbar */
+.scrollbar {
+  width: 22px;
+  text-align: center;
+  position: fixed;
+  bottom: 72px;
+  right: 0;
+  background: #ffffff;
+  padding-right: 6px;
+}
+.scrollbar ul {
+  font-size: 0px;
+}
+.scrollbar li {
+
+}
+.scrollbar li a {
+  color: #999999;
+  font-size: 12px;
+  line-height: 16px;
+  display: block;
+}
+.scrollbar li.dot {
+  display: none;
+}
+.scrollbar li.dot a {
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.scrollbar.short li {
+  display: none;
+}
+.scrollbar.short li:nth-of-type(4n+2) {
+  display: block;
+}
+.scrollbar.short li.dot {
+  display: block;
+}
+.scrollbar.short li:first-of-type {
+  display: block;
+}

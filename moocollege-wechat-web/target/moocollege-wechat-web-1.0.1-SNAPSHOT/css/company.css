@@ -1,0 +1,15 @@
+@charset "utf-8";
+/*焦点图*/
+
+.swiper-container{width:100%;}
+#container01{}
+#container01 img{width:100%; max-width:100%;}
+.swiper-pagination-switch{display: inline-block;width:8px;height:8px;border-radius: 10px;background: #fff;margin: 0 4px;cursor: pointer;}
+.swiper-active-switch{ background:#00aaf0}
+.pagination {position: absolute;left: 0;text-align: center;bottom:5px;width: 100%;}
+
+
+.slide_nav {position: absolute;-webkit-tap-highlight-color: rgba(0,0,0,0);top: 50%;left:-6px;opacity: 0.7;z-index: 3;text-indent: -9999px;
+  overflow: hidden;text-decoration: none;height:50px;width:27px;background: transparent url("../images/themes.gif") no-repeat -9px top;margin-top: -25px;border-radius:2px;}
+
+.slide_nav.next {left: auto;background-position: -66px top;right:-6px;}

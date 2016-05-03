@@ -1,0 +1,54 @@
+.nav-header{
+    background: #00aaf0;
+    text-align: center;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+}
+.nav-header span{
+    color:#fff;
+    font-size: 14px;
+}
+.nav-left{
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    left: 7px;
+    top: 12px;
+    height: 20px;
+    line-height: 20px;
+    background: url(back.png) no-repeat;
+    background-size: auto 20px;
+    padding-left: 21px;
+}
+.nav-bread{
+    display: block;
+    width: 25px;
+    height: 20px;
+    background: url("../images/bread.png");
+    background-size: 25px;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.borbottom{
+    border-bottom: 1px solid #ddd;
+}
+.countitems li{
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    overflow: hidden;
+}
+.countitems li:last-child{
+    border-bottom: none;
+}
+.countitems li p{
+    width: 30%;
+    float: left;
+}
+.conuitems li div{
+    width: 70%;
+    float: left;
+}

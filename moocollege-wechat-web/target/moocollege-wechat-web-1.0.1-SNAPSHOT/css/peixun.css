@@ -1,0 +1,92 @@
+/*微社区*/
+
+
+.pinglun-icon01{width:18px;height:19px;background-position:0 -101px;}
+.pinglun-icon02{width:16px;height:19px;background-position:0 -40px;}
+.pinglun-icon03{width:16px;height:19px;background-position:0 -19px;}
+.pinglun-icon04{width:18px;height:18px;background-position:0 -183px;}
+
+
+.user-icon{ background:url(../images/wicon.png) no-repeat; background-size:18px auto;}
+.user-icon01{width:13px;height:12px;background-position:0 -5px;}
+.user-icon02{ width:13px; height:15px;background-position:0 -24px;}
+
+.fabiao{ bottom:0; left:0; z-index:20; background:#f7f7f7;}
+.wrapper {
+	position: relative;
+	z-index: 1;
+	height: 85px;
+	width: 100%;
+	overflow: hidden;
+
+}
+.scroller img{height:85px;}
+.scroller {
+	position: absolute;
+	z-index: 1;
+	width:400px;
+	height: 85px;
+
+}
+
+.scroller ul {
+	list-style: none;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.scroller .b-map a{height:85px;}
+.scroller .b-map a:first-child { margin-left:0;}
+.scroller img{height:85px;}
+
+.addimg{width:60px; height:60px;display:inline-block;}
+.addimg img{width:60px;height:60px;}
+.closeimg{ width:25px; height:25px;background:url(../images/icon01.png) no-repeat;background-size:24px auto; background-position:0 -207px; right:-12px;top:-12px;}
+
+
+.fileInput{width:60px;height:60px;background: #d9d9d9 url(../images/add.png) no-repeat center center; background-size:30px 30px;overflow:hidden;position:relative;}
+.upfile{position:absolute;top:-100px;}
+.upFileBtn{width:60px;height:60px;opacity:0;filter:alpha(opacity=0);cursor:pointer;}
+
+.select-pos{ position:absolute;top:14px;left:36px; width:84px;}
+.arrow-down{ position:absolute ;width:6px;height:6px;border-right:2px solid #ccc;border-bottom: 2px solid #ccc;cursor: pointer;-webkit-transform: rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg);top:1px;right:0px;}
+.showall{ height:19px; line-height:19px;}
+.win-mask{position:absolute;top: 0;left: 0;opacity:0.5;background:#000;width:100%;height:100%;z-index:10;}
+.zhiding{ background:#ff9900; width:32px; height:16px; line-height:16px;position:absolute;top:10px; right:11px; color:#fff;text-align:center; -webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+/*2014.0930 收藏，赞，评论*/
+.ml5{ margin-left:5px;}
+.mr55{ margin-right:55px;}
+.pt7{ padding-top:7px;}
+.h29{ height:29px;}
+.lh29{ line-height:29px;}
+.bg-hui05{ background:#fafafa;}
+.br-hui05{ border:1px solid #bfbfbf;}
+.bt-hui05{ border-top:1px solid #bfbfbf;}
+.bb-hui05{ border-bottom:1px solid #bfbfbf;}
+.br8{ border-radius:8px;-webkit-border-radius:8px;-moz-border-radius:8px;}
+.huifuFace{ right:15px; top:10px;}
+
+.bg-hui06{ background:#999;}
+.bg-lv{background:#67ad03}
+.bg-red{ background:#ff0000}
+.list-article{ margin:0 -10px; border-top:1px #e7e7e7 solid}
+.list-article li{text-align:center; float:left; box-sizing:border-box; width:33.33%; margin:8px 0;border-left: 1px solid #e7e7e7;}
+.list-article li:first-child{ border-left:0}
+/*收藏*/
+.ico-shouc{width:18px;height:17px;background-position:0 -469px;}
+.ico-shouc-cur{width:18px;height:17px;background-position:0 -489px;}
+/*删除*/
+.ico-del01 {background-position: 0 -510px;width: 14px;height: 13px;line-height: 13px;}
+/*弹框*/
+.alertbox{position:fixed;left:10%;top:30%;width:80%;background:#FFF;padding:10px 0;border-radius:5px;z-index:999;}
+.alertbox01{z-index:10000; position:fixed;top:40%}
+.alertbox01 p{line-height:22px; color:#fff; padding:8px 15px; display:inline-block; margin:0 auto;background:#000; filter:alpha(opacity=70); -moz-opacity:0.7; opacity:0.7; border-radius:4px; font-size:14px}
+.black-bg{background-color:#000;filter:alpha(opacity=50); -moz-opacity:0.5; opacity:0.5; position:fixed;left:0;top:0;width:100%;height:100%;z-index:998;}
+/*回复*/
+#huifuPop{left:0px;width:100%; z-index:2000;}
+.icon-pos{height:21px;background:url(../images/pos.png) no-repeat;background-size:13px auto;padding-left:22px;margin-left:17px;margin-top:30px;}
+.icon-pos01{background-position:0px -2px;color:#333;}
+.icon-pos02{background-position:0px -32px;color:#00aaf0;}
+.ver-7{ vertical-align:-7px;}
+

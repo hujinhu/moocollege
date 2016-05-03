@@ -1,0 +1,90 @@
+@charset "utf-8";
+/*图标*/
+.qz-bg{background:url(../images/qz-ico.png?22) no-repeat;background-size:80px auto;}
+.qipao-ico{background-position:0px 0px;width:19px;height:17px; display:inline-block}
+.cz-bg{background:url(../images/operate.png?11) no-repeat;background-size:100px auto;}
+.del-ico{background-position:-24px 0px;width:14px;height:19px; display:inline-block}
+.ren-ico{background-position:-40px 0px;width:19px;height:17px; display:inline-block}
+
+.more-ico{background-position:0px -44px;width:19px;height:18px; display:inline-block}
+
+.loadpic-ico{background-position:0px -22px;width:20px;height:19px; display:inline-block}
+.member-ico{background-position:-24px -25px;width:20px;height:18px; display:inline-block}
+.sotxt-ico{background-position:-46px -23px;width:20px;height:18px; display:inline-block}
+
+.botlink .add{ width:17%;-webkit-box-flex:0;box-flex:0}
+.more-box{ background:#666; color:#fff;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px; position:absolute;right:4.5%;bottom:52px; padding:0 15px}
+.more-box ul:after{content: ' ';position: absolute;bottom: -6px;right:-8px;overflow: hidden;width:8px;height: 20px;background: #666;-webkit-transform: rotate(45deg);
+-o-transform: rotate(45deg);transform: rotate(45deg);}
+.more-box li{ padding:12px 0; border-bottom:1px #999 solid}
+.more-box li:last-child{ border-bottom:0}
+.more-box li i{ vertical-align:-4px; margin-right:5px}
+.more-box a{ color:#fff; border-left:0; font-size:14px; line-height:14px}
+/*私聊界面*/
+/*群聊*/
+/*.group-list li{ border-bottom:1px #ccc solid;}
+.group-list li a{ padding:10px 15px 10px 0; min-height:46px;display:block}
+.group-list .picbox{margin-right:12px;float:left;background:#dddee0;border-radius:5px;-webkit-border-radius:5px;width:48px;height:48px; padding:2px 0 0 2px;position:relative}
+.group-list .piclist li{ float:left;width:13px; height:13px; margin:0px 1px 1px; border-bottom:0}
+.group-list .picbox img{ width:13px; height:13px; vertical-align:top}
+*/
+/*群聊*/
+.group-list li{ border-bottom:1px #ccc solid;}
+.group-list li a{ padding:10px 15px 14px 0; height:45px;display:block; overflow:hidden}
+.group-list .over-hidden{ margin-top:2px}
+.group-list .time{ float:right;color: #999; margin-top:4px}
+.group-list .picbox{margin-right:12px;float:left;display:table; height:45px; position:relative;border-radius:5px;-webkit-border-radius:5px;background:#dddee0;}
+.group-list .piclist{width:47px; padding:2px 0 0px 0px; height:45px; vertical-align:middle;display:table-cell;}
+.group-list .picbox img{ width:13px; height:13px; margin:0 0 2px 2px; vertical-align:top}
+.group-list .num{height:20px;width:20px;text-align:center; line-height:20px;border-radius:20px;-webkit-border-radius:20px; position:absolute;top:-8px;right:-10px; background:#ff0000; color:#fff;}
+
+.botlink .add{ width:17%;-webkit-box-flex:0;box-flex:0}
+.more-box{ background:#666; color:#fff;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px; position:absolute;right:4.5%;bottom:52px; padding:0 15px}
+.more-box ul:after{content: ' ';position: absolute;bottom: -6px;right:-8px;overflow: hidden;width:8px;height: 20px;background: #666;-webkit-transform: rotate(45deg);
+-o-transform: rotate(45deg);transform: rotate(45deg);}
+.more-box li{ padding:12px 0; border-bottom:1px #999 solid}
+.more-box li:last-child{ border-bottom:0}
+.more-box li i{ vertical-align:-4px; margin-right:5px}
+.more-box a{ color:#fff; border-left:0; font-size:14px; line-height:14px}
+
+/*私聊界面*/
+.look{ border-bottom:1px #ccc solid;text-align:center; color:#999; margin:25px 15px 25px; position:relative;}
+.look span{ padding:2px;background:#e5e5e5; position:absolute;left:50%;top:-9px;-webkit-transform: translate(-50%,0);-moz-transform: translate(-50%,0);transform: translate(-50%,0);}
+.bg-hui09{ background:#e5e5e5}
+.chatcontent {padding: 15px 15px 0;position: relative;}
+.chatitem {padding: 4px 0px 10px 0px;}
+.chatcontent:after {content: ' ';display: block;clear: both;height: 0;visibility: hidden;font-size: 0;line-height: 0;}
+.chatitem .cloud {max-width: 300px;cursor: default;position: static;}
+.chatitem .avatar {width: 38px;height: 38px; border:1px #a7a89c solid}
+.cloudbody {border: 1px solid #cacaca;background:#f8f8f8;box-shadow: 0px 2px 0px #dcdcdc;border-radius:6px;-webkit-border-radius:6px; margin-top:3px}
+.cloudcontent{padding:12px 10px 12px 10px;border-radius: 5px; font-size:16px;-webkit-border-radius: 5px; color:#333}
+
+.me .avatar {float: right;}
+.me .cloud {float: right;min-width:50px;max-width:225px;margin: 0 15px 0 0;}
+.me .cloudbody {border: 1px solid #86ce61; background:-webkit-gradient(linear, 100% 1%, 100% 100%, from(#a3e85e), to(#95e247));box-shadow: 0px 2px 0px #D5D5D5;}
+.me .cloudcontent{padding: 12px 10px;border-top: 1px solid #DCE6C8;border-radius:6px;-webkit-border-radius:6px;}
+.me .cloudarrow{position: absolute;right:-10px;top:8px;width:10px;height:15px;background: url(../images/arrow.jpg) no-repeat;background-size:10px auto;}
+.me .name{ text-align:right; font-size:14px; color:#999}
+.you .avatar {float: left;}
+.you .cloud {float: left;min-width: 50px;max-width: 225px;margin: 0 0 0 15px;}
+.you .name{ text-align:left;font-size:14px;color:#999}
+.you .cloudarrow{position: absolute;left:-10px;top:8px;width:10px;height:15px;background: url(../images/arrow1.jpg) no-repeat;background-size:10px auto;}
+
+.date{ text-align:center; padding-top:10px}
+.date span{color:#fff; background:#c9c9c9;border-radius:6px;-webkit-border-radius:6px; display:inline-block; padding:5px 10px}
+
+/*回复*/
+.answer{ position:fixed;left:0;bottom:0; width:100%;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box; background:#f5f5f7;padding:7px 5px; border:1px #c4c4c5 solid; border-left:0; border-right:0;display:-moz-box;display:-webkit-box;display:box;}
+.answer .inp{ border:1px #acaeb2 solid; height:35px;-webkit-box-flex:1;box-flex:1;line-height:35px;border-radius:5px;-webkit-border-radius:5px; background:#fff; padding:0 4px}
+.answer .inp input{ border:0; height:33px;border-radius:5px;-webkit-border-radius:5px; width:100%}
+.answer .face{ width:30px; height:30px; background-position:1px 1px; margin:3px 0 0 5px; display:inline-block}
+.answer .add{width:30px; height:30px; background-position:-30px 1px; display:inline-block}
+
+/*水印*/
+.watermark pre{z-index:999;transform: rotate(-45deg);-webkit-transform: rotate(-45deg);}
+#pullDown,#pullUp{ padding:10px 0; text-align:center}
+
+/*搜索*/
+#so{ z-index:99999; position:relative; width:100%;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+
+

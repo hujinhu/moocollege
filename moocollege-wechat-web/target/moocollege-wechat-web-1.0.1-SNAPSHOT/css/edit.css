@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+.cir27{ width:27px; height:27px;}
+.cir30{ width:30px; height:30px;}
+.edit-share-pos{ position: absolute;right: 24px;bottom: 14px;}
+.edit-header{ width:100%; height:140px; background:url(../images/edit-bg.jpg) no-repeat; background-size:100% 140px;}
+.edit-con{ background:url(../images/edit-con.png) no-repeat; background-size:20px auto;}
+.edit-edit{width:16px;height:16px;background-position:0 -407px;position:relative;top:6px;}
+.edit-share{width:16px;height:16px;background-position:0 -438px;position:relative;top:5px;}
+.edit-photo{background-position:7px -454px; background-color:#fff;}
+.edit-com{background-position:0 -109px;height:19px;position:relative;top:11px;}
+.edit-phone{background-position:0 -145px;height:18px;position:relative;top:11px;}
+.edit-phone01{background-position:0 -182px;height:15px;position:relative;top:13px;}
+.edit-phone02{background-position:0 -217px;height:18px;position:relative;top:11px;}
+.edit-emai{background-position:0 -253px;height:12px;position:relative;top:15px;}
+.edit-wap{background-position:0 -286px;height:19px;position:relative;top:12px;}
+.edit-nav{background-position:2px -328px;height:20px;position:relative;top:10px;}
+.btn-clear{position:absolute;top:9px;right:16px;width:20px;height:21px;background-position:0 -365px; }
+

@@ -1,0 +1,107 @@
+html, body, p {
+	padding: 0;
+	margin: 0;
+}
+
+a, a:hover, a:visited {
+	color: #333333;
+	text-decoration: none;
+}
+a, p {
+	font-family: 'Microsoft YaHei';
+}
+
+/*************            ���涓���ラ��杩�涓�椤甸�㈡�惧�� ���浠ユ��瀹����绔���烘��                    ************/
+
+.template {
+	display: block;
+	width: 100%;
+}
+.template, .template * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/* .template + .template {
+	margin-top: 22px;
+} */
+.template .row {
+
+}
+.template .row + .row a {
+	margin-top: -1px;
+}
+
+.template a {
+	display: block;
+	white-space: normal;
+	word-break: break-all;​
+	font-size: 14px;
+}
+.template .t-large {
+	position: relative;
+	font-size: 0;
+}
+.template .t-large img {
+	width: 100%;
+}
+.template .t-large p {
+	line-height: 36px;
+	font-size: 18px;
+	width: 100%;
+	height: 36px;
+	padding: 0 10px;
+	position: absolute;
+	bottom: 0;
+	color: #ffffff;
+	background: rgba(0,0,0, .3);
+}
+.template .t-middle {
+	width: 100%%;
+	border-top: 1px #f0f0f0 solid;
+	border-bottom: 1px #f0f0f0 solid;
+}
+.template .t-middle:before,
+.template .t-middle:after {
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+.template .t-middle:after {clear: both;}
+.template .t-middle {zoom: 1;} /* IE < 8 */
+.template .t-middle img {
+	float: left;
+	width: 60px;
+	height: 60px;
+	margin: 10px;
+}
+.template .t-middle p {
+	padding: 15px 10px;
+	color: #333333;
+	font-size: 18px;
+}
+.template .t-small {
+	width: 50%;
+	height: 88px;
+	float: left;
+	display: block;
+	padding: 15px 10px;
+	font-size: 18px;
+	color: #333333;
+	border-top: 1px #f0f0f0 solid;
+	border-bottom: 1px #f0f0f0 solid;
+}
+.template .t-small + .t-small {
+	border-left: 1px #f0f0f0 solid;
+}
+.template .row:before,
+.template .row:after {
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+.template .row:after {clear: both;}
+.template .row {zoom: 1;} /* IE < 8 */

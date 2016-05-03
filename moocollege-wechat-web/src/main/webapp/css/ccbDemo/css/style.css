@@ -1,0 +1,354 @@
+BODY {
+	FONT-SIZE: 12px; MARGIN: 0px; FONT-FAMILY: "宋体", Arial; BACKGROUND-COLOR: #ffffff
+}
+TD {
+	FONT-SIZE: 12px
+}
+INPUT {
+	FONT-SIZE: 12px
+}
+SELECT {
+	FONT-SIZE: 12px
+}
+TABLE {
+	FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+/*20130817 标题样式*/
+div.input table.front3 td.h1{
+ font-family: "宋体",Arial;
+ color: #000000;
+ FONT-SIZE: 14px;
+}
+.front1 {
+	LINE-HEIGHT: 16pt
+}
+.input {
+	FONT-SIZE: 12px; COLOR: #6f8199
+}
+.front2 {
+	FONT-SIZE: 12px; COLOR: #6984b4; LINE-HEIGHT: 15px
+}
+A {
+	FONT-SIZE: 12px; COLOR: #666666; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #778fbd
+}
+.front3 {
+	FONT-SIZE: 12px; COLOR: #000000; LINE-HEIGHT: 18pt; TEXT-DECORATION: none
+}
+.front3  p{
+	margin:0px;
+}
+.front4 {
+	LINE-HEIGHT: 20px
+}
+.front5 {
+	FONT-WEIGHT: bolder; FONT-SIZE: 14px; COLOR: #cc0000; TEXT-DECORATION: none
+}
+.ts_search {
+	WIDTH: 75px; HEIGHT: 18px
+}
+.td_L {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: #797979 1px solid; BORDER-BOTTOM: 0px
+}
+.td_L_R {
+	BORDER-RIGHT: #797979 1px solid; BORDER-TOP: 0px; BORDER-LEFT: #797979 1px solid; BORDER-BOTTOM: 0px; BACKGROUND-COLOR: #e9f7ff
+}
+.td_L_R_B {
+	BORDER-RIGHT: #4c7390 1px solid; BORDER-TOP: 0px; BORDER-LEFT: #4c7390 1px solid; BORDER-BOTTOM: #4c7390 1px solid
+}
+.td_blue_T {
+	BORDER-TOP: #c8d1e0 1px solid; BACKGROUND-COLOR: #dae6f2
+}
+.td_blue_B {
+	BORDER-BOTTOM: #c8d1e0 1px solid; BACKGROUND-COLOR: #dae6f2
+}
+.td_blue_L_R {
+	BORDER-RIGHT: #c8d1e0 1px solid; BORDER-TOP: 0px; BORDER-LEFT: #c8d1e0 1px solid; BORDER-BOTTOM: 0px; BACKGROUND-COLOR: #dae6f2
+}
+.productmenu_mOut {
+	CURSOR: hand; COLOR: #757575; PADDING-TOP: 3px
+}
+.productmenu_mOver {
+	CURSOR: hand; COLOR: #ce1821; PADDING-TOP: 3px
+}
+.distance_top3px {
+	PADDING-TOP: 3px
+}
+.input_red {
+	FONT-SIZE: 12px; COLOR: #cc0000
+}
+.front_green {
+	FONT-SIZE: 12px; COLOR: #009933; TEXT-DECORATION: none
+}
+.font_gray {
+	COLOR: #666666
+}
+.font_white {
+	COLOR: #ffffff
+}
+.font_black {
+	COLOR: #000000
+}
+.font_red_bold {
+	FONT-WEIGHT: bold; COLOR: #cc0000
+}
+.font_blue_bold {
+	FONT-WEIGHT: bold; COLOR: #7285ad
+}
+.font_blue_navyblue_bold {
+	FONT-WEIGHT: bold; COLOR: #4e6591
+}
+.font_black_bold {
+	FONT-WEIGHT: bold; COLOR: #000000
+}
+.font_blue {
+	COLOR: #5a83bb
+}
+.font_jrzx_title {
+	PADDING-LEFT: 4px; FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #156fab
+}
+.login_ebank {
+	BORDER-RIGHT: #797979 1px solid; BORDER-TOP: 0px; FONT-WEIGHT: bold; FONT-SIZE: 12px; BORDER-LEFT: #797979 1px solid; COLOR: #ffffff; BORDER-BOTTOM: 0px
+}
+.font_lineheight {
+	LINE-HEIGHT: 120%
+}
+.font_dropshadow {
+	FILTER: dropshadow(color=#000000,offx=1,offy=1)
+}
+.font_jrzx_title {
+	PADDING-LEFT: 4px; FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #156fab
+}
+A.link_jrzx_title:link {
+	PADDING-LEFT: 4px; FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #156fab
+}
+active {
+	PADDING-LEFT: 4px; FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #156fab
+}
+A.link_jrzx_title:visited {
+	PADDING-LEFT: 4px; FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #156fab
+}
+A.link_jrzx_title:hover {
+	PADDING-LEFT: 4px; FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #cc0000
+}
+A.index_center:link {
+	COLOR: #778fbd; TEXT-DECORATION: none
+}
+active {
+	COLOR: #778fbd; TEXT-DECORATION: none
+}
+A.index_center:visited {
+	COLOR: #778fbd; TEXT-DECORATION: none
+}
+A.index_center:hover {
+	COLOR: #00306e; TEXT-DECORATION: underline
+}
+A.font_login:link {
+	FONT-WEIGHT: bold; COLOR: #00316e; TEXT-DECORATION: none
+}
+active {
+	FONT-WEIGHT: bold; COLOR: #00316e; TEXT-DECORATION: none
+}
+A.font_login:visited {
+	FONT-WEIGHT: bold; COLOR: #00316e; TEXT-DECORATION: none
+}
+A.font_login:hover {
+	FONT-WEIGHT: bold; COLOR: #778fbd; TEXT-DECORATION: none
+}
+A.link_green_bold:link {
+	FONT-WEIGHT: bold; COLOR: #76bc01; TEXT-DECORATION: none
+}
+active {
+	FONT-WEIGHT: bold; COLOR: #76bc01; TEXT-DECORATION: none
+}
+A.link_green_bold:visited {
+	FONT-WEIGHT: bold; COLOR: #76bc01; TEXT-DECORATION: none
+}
+A.link_green_bold:hover {
+	FONT-WEIGHT: bold; COLOR: #76bc01; EXT-DECORATION: none
+}
+A.link_orange_bold:link {
+	FONT-WEIGHT: bold; COLOR: #e19000; TEXT-DECORATION: none
+}
+active {
+	FONT-WEIGHT: bold; COLOR: #e19000; TEXT-DECORATION: none
+}
+A.link_orange_bold:visited {
+	FONT-WEIGHT: bold; COLOR: #e19000; TEXT-DECORATION: none
+}
+A.link_orange_bold:hover {
+	FONT-WEIGHT: bold; COLOR: #e19000; EXT-DECORATION: none
+}
+A.link_blue:link {
+	COLOR: #778fbd; TEXT-DECORATION: none
+}
+active {
+	COLOR: #778fbd; TEXT-DECORATION: none
+}
+A.link_blue:visited {
+	COLOR: #778fbd; TEXT-DECORATION: none
+}
+A.link_blue:hover {
+	COLOR: #00306e; TEXT-DECORATION: none
+}
+A.link_navyblue:link {
+	COLOR: #4e6591; TEXT-DECORATION: none
+}
+active {
+	COLOR: #4e6591; TEXT-DECORATION: none
+}
+A.link_navyblue:visited {
+	COLOR: #4e6591; TEXT-DECORATION: none
+}
+A.link_navyblue:hover {
+	COLOR: #4e6591; TEXT-DECORATION: none
+}
+A.link_navyblue_bold:link {
+	FONT-WEIGHT: bold; COLOR: #7285ad; TEXT-DECORATION: none
+}
+active {
+	FONT-WEIGHT: bold; COLOR: #7285ad; TEXT-DECORATION: none
+}
+A.link_navyblue_bold:visited {
+	FONT-WEIGHT: bold; COLOR: #7285ad; TEXT-DECORATION: none
+}
+A.link_navyblue_bold:hover {
+	FONT-WEIGHT: bold; COLOR: #7285ad; TEXT-DECORATION: none
+}
+A.link_white_underline:link {
+	FONT-WEIGHT: bold; COLOR: #ffffff; TEXT-DECORATION: none
+}
+active {
+	FONT-WEIGHT: bold; COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.link_white_underline:visited {
+	FONT-WEIGHT: bold; COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.link_white_underline:hover {
+	FONT-WEIGHT: bold; COLOR: #ffffff; TEXT-DECORATION: underline
+}
+A.link_white_normal:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+active {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.link_white_normal:visited {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.link_white_normal:hover {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+A.link_black_normal:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+active {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.link_black_normal:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.link_black_normal:hover {
+	COLOR: #4d6faf; TEXT-DECORATION: none
+}
+A.link_green_normal:link {
+	COLOR: #3a9311; TEXT-DECORATION: none
+}
+active {
+	COLOR: #3a9311; TEXT-DECORATION: none
+}
+A.link_green_normal:visited {
+	COLOR: #3a9311; TEXT-DECORATION: none
+}
+A.link_green_normal:hover {
+	COLOR: #3a9311; TEXT-DECORATION: underline
+}
+A.link_blue_normal:link {
+	COLOR: #4d6faf; TEXT-DECORATION: none
+}
+active {
+	COLOR: #4d6faf; TEXT-DECORATION: none
+}
+A.link_blue_normal:visited {
+	COLOR: #4d6faf; TEXT-DECORATION: none
+}
+A.link_blue_normal:hover {
+	COLOR: #4d6faf; TEXT-DECORATION: underline
+}
+H2 {
+	FONT-SIZE: 14px; COLOR: #0000c0; TEXT-DECORATION: none
+}
+.STYLE1 {
+	COLOR: #cc3300
+}
+.STYLE2 {
+	PADDING-LEFT: 4px; FONT-SIZE: 13px; COLOR: #156fab
+}
+.onlinetable {
+	BORDER-RIGHT: #1370b6 1px solid; BORDER-TOP: #1370b6 1px; BORDER-LEFT: #1370b6 1px solid; BORDER-BOTTOM: #1370b6 1px; TEXT-ALIGN: center
+}
+.tdborad {
+	BORDER-RIGHT: #1370b6 1px solid; BORDER-TOP: #1370b6 1px; BORDER-LEFT: #1370b6 1px solid; BORDER-BOTTOM: #1370b6 1px
+}
+.tdimages {
+	BACKGROUND-ATTACHMENT: fixed; BACKGROUND-IMAGE: url(../images/title_05.gif); BACKGROUND-REPEAT: no-repeat
+}
+A.link_blue:link {
+	COLOR: #778fbd; LINE-HEIGHT: 20px; TEXT-DECORATION: none
+}
+A.link_blue:visited {
+	COLOR: #778fbd; LINE-HEIGHT: 20px; TEXT-DECORATION: none
+}
+A.link_blue:hover {
+	COLOR: #000000; LINE-HEIGHT: 20px; TEXT-DECORATION: none
+}
+.t A:link {
+	FONT-SIZE: 12px; COLOR: #000000; LINE-HEIGHT: 27px; FONT-FAMILY: "宋体"; TEXT-DECORATION: none
+}
+active {
+	FONT-SIZE: 12px; COLOR: #000000; LINE-HEIGHT: 27px; FONT-FAMILY: "宋体"; TEXT-DECORATION: none
+}
+.t A:visited {
+	COLOR: #000000; LINE-HEIGHT: 27px; TEXT-DECORATION: none
+}
+.t A:hover {
+	COLOR: #000000; LINE-HEIGHT: 27px; TEXT-DECORATION: none
+}
+.font_gray_bold {
+	FONT-WEIGHT: bold; COLOR: #363636
+}
+A.link_red:link {
+	COLOR: #ca1824; TEXT-DECORATION: none
+}
+active {
+	COLOR: #ca1824; TEXT-DECORATION: none
+}
+A.link_red:visited {
+	COLOR: #ca1824; TEXT-DECORATION: none
+}
+A.link_red:hover {
+	COLOR: #ca1824; TEXT-DECORATION: none
+}
+A.link_red1:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+active {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.link_red1:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.link_red1:hover {
+	COLOR: #ca1824; TEXT-DECORATION: none
+}
+.index_cateColor {
+	BACKGROUND-COLOR: #ca1921
+}
+.td_index_globle {
+	BACKGROUND-COLOR: #e9f7ff
+}
+.td_middle_buttem {
+	BACKGROUND-COLOR: #ca1921
+}

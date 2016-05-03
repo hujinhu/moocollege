@@ -1,0 +1,21 @@
+.vote-li{ margin-right:-10px}
+.vote-li li{ padding:0 10px 12px 0;overflow:hidden;float:left}
+.vote-li .pic{ height:140px; margin-bottom:2px}
+.vote-pb li{padding:0 10px 15px 0}
+/*单选*/
+.option-input{width:18px;height:18px;-webkit-appearance: none!important;appearance: none; background:#fff;color: #fff;cursor: pointer;display: inline-block;outline: none; border:1px #ccc solid; vertical-align:-5px; margin-right:6px; position:relative;transition: all .5s ease;-webkit-transition: all .5s ease;}
+.option-input:checked {background:#67ad03; border:1px #67ad03 solid}
+.option-input:checked::before {position: absolute;left:20%;top:30%;content: ''; width:10px; height:12px;background: url(../images/sprite.png) -80px -36px; background-size:320px auto}
+.ico-bili{ width:15px;height:10px;background-position:-31px 0;}
+/*进度*/
+.vote-loading p{height:10px; overflow:hidden}
+.vote-loading span{display:inline-block; vertical-align:1px}
+/* .bg-red{background:#ed7a7a}
+.bg-huang1{background:#fbad6d}
+.bg-blue2{ background:#71b6e1}
+.bg-lv1{ background:#67ccb3} */
+.bg-color0{background:#ed7a7a}
+.bg-color1{background:#fbad6d}
+.bg-color2{ background:#71b6e1}
+.bg-color3{ background:#67ccb3}
+.bg-color4{background:#ed7a7a}

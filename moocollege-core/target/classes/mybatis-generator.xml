@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+	<!-- 此处路径自己配置 -->
+	<classPathEntry location="/Users/hujinhu/.m2/repository/mysql/mysql-connector-java/5.1.30/mysql-connector-java-5.1.30.jar" />
+	 <!-- <classPathEntry location="E:\maven\repo\mysql\mysql-connector-java\5.1.21\mysql-connector-java-5.1.21.jar" /> -->
+
+	<context id="context1" targetRuntime="MyBatis3">
+		<plugin type="org.mybatis.generator.plugins.RenameExampleClassPlugin">
+			<property name="searchString" value="Example" />
+			<property name="replaceString" value="Criteria" />
+		</plugin>
+		<plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
+		
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://10.211.55.30:3306/moocollege?characterEncoding=utf-8" userId="root" password="root" />
+		
+		<!-- 此处是将Example改名为Criteria 当然 想改成什么都行 -->
+		
+		<!--DTO的路径 -->
+		<javaModelGenerator targetPackage="com.moocollege.dto" targetProject="moocollege-core">
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+		<!--生成SQL-XML的路径 -->
+		<sqlMapGenerator targetPackage="mybatis.mapper" targetProject="moocollege-core/src/main/resources">
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+		<!--DAO的路径 -->
+		<javaClientGenerator targetPackage="com.moocollege.dao" targetProject="moocollege-core" type="XMLMAPPER">
+			<property name="enableSubPackages" value="true" />
+		</javaClientGenerator>
+
+	 
+	<!-- 	<table tableName="qy_app" domainObjectName="QyApp">
+			<generatedKey column="id" sqlStatement="MySql" identity="true" />
+		</table>  -->
+		<table tableName="qy_menu" domainObjectName="QyMenu">
+			<generatedKey column="id" sqlStatement="MySql" identity="true" />
+		</table> 
+		 
+	</context>
+</generatorConfiguration>

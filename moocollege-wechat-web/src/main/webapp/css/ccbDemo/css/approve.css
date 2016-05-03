@@ -1,0 +1,126 @@
+@charset "utf-8";
+/*审批公用元素*/
+.pb30{ padding-bottom:30px}
+.title{background:#eee; line-height:30px; font-size:14px; color:#666; border-top:1px #ccc solid;border-bottom:1px #ccc solid; padding-left:15px}
+.content{padding-left:15px; font-size:14px; padding-right:15px; color:#333}
+div[data-placeholder]:not(:focus):not([data-div-placeholder-content]):before {
+    content: attr(data-placeholder);
+    color: #999;
+}
+.content .sp-user{ margin-top:-5px; margin-left:-15px}
+.xx-content{padding: 15px 20px 15px 0;border-bottom: 1px solid #ccc;}
+/*审批记录*/
+.navlist{display:-moz-box;display:-webkit-box;display:box;}
+.navlist a{-moz-box-flex:1;-webkit-box-flex:1;box-flex:1; cursor:pointer;line-height:40px; background:#f5f5f5; display:block; border-bottom:1px #ccc solid; border-right:1px #ccc solid; text-align:center; color:#333; font-size:15px}
+.navlist a:last-child{ border-right:0}
+.navlist a.cur{ color:#00aaf0; border-bottom:2px #00aaf0 solid}
+/*审批列表*/
+.conlist li{ padding:15px; border-bottom:1px #ccc solid; position:relative}
+.conlist .labels{ position:absolute;top:22px;right:15px;border-radius:20px;-moz-border-radius:20px;-webkit-border-radius:20px; color:#fff; padding:3px 6px}
+.conlist h2{ font-size:15px; color:#333; padding-bottom:8px}
+.conlist p{ color:#999;}
+/*审批详情*/
+.xx-title{ font-size:18px; color:#333; padding-bottom:10px}
+.xx-pic{ width:84px; height:84px; margin-top:12px; margin-right:6px; vertical-align:top}
+.xx-pic1{ width:60px; height:60px;margin:10px 15px 0; border-radius:60px;-webkit-border-radius:60px;vertical-align:top}
+/*审批人*/
+.sp-user li{ width:60px; margin:10px 5px 0; float:left; position:relative; text-align:center}
+.sp-user li img{ width:60px; height:60px; border-radius:60px;-webkit-border-radius:60px; margin-bottom:2px}
+.sp-user li p{ color:#333}
+.sp-user .sp-ico{ position:absolute;right:-12px;top:-2px;}
+.sp-user1 li{ margin:10px 5px 0; font-size:12px}
+
+.sp-ico{background:url(../images/sp-ico.png) no-repeat;background-size:50px auto;}
+.sp-del{ background-position:0 -1px;width:25px; height:25px;}
+.sp-wait{background-position:-25px -1px;width:25px; height:25px;}
+.sp-pass{background-position:-25px -26px;width:25px; height:25px;}
+.sp-nopass{background-position:-25px -52px;width:25px; height:25px;}
+/*上传相片*/
+.sp-photo{ margin-left:-10px}
+.sp-photo li{ width:60px; margin:10px 10px 0; float:left; position:relative; text-align:center}
+.sp-photo li img{ width:60px; height:60px; margin-bottom:2px}
+.sp-photo .sp-ico{ position:absolute;right:-12px;top:-10px;}
+
+/*发起请假*/
+.row{border:1px #ccc solid; background:#fff; border-left:0; border-right:0; font-size:14px}
+.row li{ border-bottom:1px #ccc solid; padding:0 15px 0 0; line-height:40px; margin:0 0 0 15px;display: -webkit-box;display: box;}
+.row li:last-child{ border-bottom:0}
+/*请假详情*/
+.xx-box{padding:20px 15px; color:#fff}
+.xx-box .biaoti{ font-size:18px; padding-bottom:8px}
+.qj-ico{background:url(../images/qj-ico.png) no-repeat;background-size:65px auto;}
+.qj-qi{ background-position:0 0;width:27px; height:27px; display:inline-block}
+.qj-zhi{ background-position:0 -27px;width:27px; height:27px; display:inline-block}
+
+.mx-list li{margin-left:15px;word-wrap: break-word;word-break: break-all; padding:12px 15px 12px 0; border-bottom:1px #ccc solid;display:-webkit-box;-webkit-box-pack:center;-webkit-box-align: center;display: box;box-pack: center;box-align: center;}
+.mx-list li:last-child{ border-bottom:0}
+.mx-list li p:nth-child(1){ width:25%}
+.mx-list li p:nth-child(2){ width:53%}
+.mx-list li p:nth-child(3){ width:22%; text-align:right}
+.nobd{border-top:0; border-bottom:0;}
+.close{background-position:-29px 0px;width:21px; height:21px; display:inline-block}
+.addmx{padding:15px; border-bottom:2px #ddd solid}
+.neirong{ padding:10px 0 !important; line-height:normal !important}
+/*底部导航*/
+.botlink{ position:fixed;left:0;bottom:0; background:#fff; width:100%;line-height:40px; height:40px; border-top:1px #ddd solid; text-align:center;display:-moz-box;display:-webkit-box;display:box;}
+.botlink a{-moz-box-flex:1;-webkit-box-flex:1;box-flex:1; display:block; color:#00aaf0; border-left:1px #ddd solid; font-size:16px}
+.bottlink a:first-child{ border-left:0}
+.to-ico{ width:18px; height:18px;background-position:-1px -25px; display:inline-block;}
+/*邮件*/
+.row .label{ width:72px; display:inline-block; color:#333}
+.title1{background:#eee;font-size:14px; color:#999; padding:18px 0 10px 15px}
+.title2{background:#eee;font-size:14px; color:#999; line-height:40px; border-bottom:1px #ccc solid;border-top:1px #ccc solid;padding:0 0 0 15px}
+.myemail{border-bottom:1px solid #ccc;}
+.myemail .row1:last-child p a{ border-bottom:0}
+.row1{ background:#fff;margin-left:15px}
+.row1 .r-left{display:-webkit-box;-webkit-box-pack:center;-webkit-box-align: center;display: box;box-pack: center;box-align: center;}
+.email-ico{background:url(../images/mail-ico.png) no-repeat;background-size:80px auto;}
+.email-pic{ width:23px; height:15px;background-position:0 0px; display:inline-block;}
+.email-pic1{ width:28px; height:23px;background-position:-30px -32px; display:inline-block;}
+
+.email-add{ width:17px; height:17px;background-position:0px -17px; display:inline-block;}
+.email-shou{ width:23px; height:17px;background-position:0px -36px; display:inline-block;}
+.email-fa{ width:23px; height:22px;background-position:0px -55px; display:inline-block;}
+.email-edit{ width:19px; height:19px;background-position:-29px -1px; display:inline-block;}
+.email-fujian{ width:14px; height:13px;background-position:-28px -21px; display:inline-block;}
+.email-tab{ border:1px #00aaf0 solid; width:75%; margin:10px auto;-webkit-border-radius:4px;border-radius:4px;}
+.email-tab a{line-height:30px; display:block; color:#fff; text-align:center; color:#00aaf0; font-size:14px}
+.email-tab a.cur{ color:#fff; background:#00aaf0}
+.botlink1{position:fixed;left:0;bottom:0; background:#fff; width:100%;height:40px; border-top:1px #ddd solid; text-align:center;}
+.botlink1 .email-link{position:absolute;right:0;top:0; padding:12px 15px 0 15px}
+.botlink1 .email-edit{ vertical-align:top}
+.botlink1 p{ display:block; width:100%}
+.row1 .arrow{ right:15px;}
+.row1 .r-right a{ border-bottom:1px #ccc solid; color:#333; font-size:16px; padding:14px 15px 14px 0;margin:0 0 0 11px;}
+
+.row1-list .jiantou{position: absolute;right:15px;top: 50%;-webkit-transform: rotate(45deg)translate(-50%,-50%);
+transform: rotate(45deg) translate(-50%,-50%);width:10px;height:10px;border-right:2px solid #ccc;border-bottom: 2px solid #ccc;cursor: pointer;transition:all 0.3s;-webkit-transition:all 0.3s;}
+.row1-list .selected .jiantou{-webkit-transform: rotate(225deg)translate(20%,20%);transform: rotate(225deg) translate(20%,20%);}
+
+.list-item{ padding-left:39px}
+.list-item .row1{ margin-left:11px}
+.email-list{ overflow:hidden}
+.email-list li{ border-bottom:1px #ccc solid; position:relative; margin:0 0 0 34px;padding:8px 15px 8px 0}
+.email-list a{ display:block}
+.email-list .name{ font-size:16px; line-height:22px; color:#333; padding:2px 20px 0 0;}
+.email-list h2{ color:#333; padding:1px 0 0; font-size:15px; font-weight:normal}
+.email-list .txt{ font-size:15px; color:#999; line-height:22px}
+.email-list .email-fujian{ margin:3px 0 0 -20px}
+
+.visit{ background:#f00; width:12px; height:12px; border-radius:12px;-webkit-border-radius:12px; display:inline-block;margin:0 8px 0 -20px;}
+
+.email-list li .name-dele{width:67px;height:62px;line-height:62px;position:absolute;top:-1px;right:-67px;background: #e11c0d; text-align:center; font-size:16px}
+.panLeft{-webkit-animation: toleft 0.7s ease forwards;}
+@-webkit-keyframes toleft{
+	0% { left:0px;}
+	100% {left:-67px;}
+	}
+	
+.panright{-webkit-animation: toright 0.7s ease forwards;}
+
+@-webkit-keyframes toright{
+	0% {left:-67px;}
+	100% {left:0px;}
+	}
+
+

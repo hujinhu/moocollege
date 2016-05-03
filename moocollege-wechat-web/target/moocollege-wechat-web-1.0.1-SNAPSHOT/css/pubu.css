@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+	em {
+	display: block;
+	padding-left: 45px;
+	height: 32px;
+	line-height: 32px;
+	margin-right: 15px;
+	float: right;
+	font-size: 18px; background-size:32px
+	
+}
+em.prise {
+	background: url(../images/zan.png) left center no-repeat
+}
+em.share {
+	background: url(../images/share.png) left center no-repeat
+}
+em.rep {
+	background: url(../images/chat.png) left center no-repeat;
+}
+.btn-blue{ background:#00A9C8; color:#fff}
+.btn-blue:hover, .btn-blue:active{ background:#15C4E5; color:#fff}
+.btn-none{ background:none; border:none}
+.replyUl li{ border-bottom:1px solid #ccc; padding-bottom:20px}
+.reply{ display:none}
+.replyUl2{ padding-left:5%; }
+.replyUl2 li{ border-bottom:0px solid #ccc; padding-bottom:0px; }
+.replyUl2 li p{ border-bottom:0px solid #ccc; font-size:16px}
+a.duarr_open{ width:32px; height:32px; background:url(../images/du_arr.png); display:inline-block}
+a.duarr_close{ width:32px; height:32px; background:url(../images/du_arr.png) 0 -33px; display:inline-block}
+/*弹出层*/
+.page-bg{
+	width:100%;
+	height:100%;
+	min-height:100%;
+	background:url(../images/bg4.png) repeat;
+	position:fixed;
+	left:0px;
+	top:0px;
+	z-index:100;
+}
+.coll-div{
+	width:80%;
+	border-radius:6px;
+	margin:-60px 0 0 -2px;
+	border:1px solid #C8C7C6;
+	background:#fff;
+	position:fixed;
+	left:10%;
+	top:50%;
+	z-index:110;
+}
+.close{
+	width:20px;
+	height:20px;
+	cursor:pointer;
+	background:url(../images/bg14.jpg) no-repeat center center;
+	background-size:16px 16px;
+	position:absolute;
+	right:10px;
+	top:8px;
+}
+.collD-p{
+	height:30px;
+	font-size:22px;
+	line-height:30px;
+	text-align:center;
+	padding:50px 0 40px;
+}
+.collD-p span{
+	color:#007eba;
+	padding-left:30px;
+	background:url(../images/bg15.jpg) no-repeat left center;
+	background-size:26px 18px;
+}
+.share-div{
+	width:100%;
+	overflow:hidden;
+	padding:5px 5% 0 35%;
+	position:fixed;
+	left:0px;
+	top:0px;
+	z-index:110;
+}
+.share-div img{float:right;}
+
+/* list 瀑布流 */
+#container{width:100%;min-width:320px; margin:8px auto 0;}
+#container ul{width:50%;list-style:none;float:left; padding-left:1%; box-sizing:border-box}
+#container ul:nth-child(2){ padding-right:1%;}
+#container ul li{background-color:#FFF;margin-bottom:4px;box-sizing: border-box; border-bottom:1px #ddd solid; margin-bottom:12px;
+	/*box-shadow: 1px 2px 3px 0 #C9C9C9;*/}
+#container ul li img{width:100%;height:auto;vertical-align:bottom;}
+.water_user{color:#666;font-size:18px;line-height:22px;color:#575757;border-bottom:1px #dadada solid;}
+.pdp4{padding:4%;}
+.water_option{font-size:20px;padding:4% 0 4% 5%;border-radius:0 0 8px 8px;}
+.water_option:after{content:"";display:block;clear:both;visibility:hidden;}
+.option_item{color:#3e88cd;text-decoration:none;margin-right:2%;color:#a7a7a7;padding-left:14%;margin-bottom:9px;}
+.option_coll{background:url(../images/icon_coll.gif) no-repeat left center;background-size:auto 85%;}
+.option_comt{background:url(../images/icon_comt.gif) no-repeat left center;background-size:auto 85%;}
+.loadMeinvMOre{height:36px;line-height:34px;color:#999;text-align:center;background:#f9f9f9;display:block;clear:both;text-decoration:none;}
+.loadMeinvMOre:hover{ background:#f0f0f0;color:#666;}
+
+.story{width:24%;position:fixed;top:60%;right:2%;}
+.copyRight{text-align:center;font-size:12px;color:#898989;}
+
+
+.zan-link, .zan-link:hover {
+	padding: 0 4px;
+	color: #fffcff;
+	height: 18px;
+	line-height: 18px;
+	font-size: 12px;
+	background: rgba(10, 10, 10, 0.5);
+	border-radius: 4px;
+	
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	color: #fff
+}
+.icon-like {
+	width: 10px;
+	height: 10px;
+	background: url(../images/zan.png) no-repeat;
+	background-size: 10px auto;
+	margin-right:4px;
+	display: inline-block;
+}
+
+/* 最大宽度 640px */
+@media screen and (max-width: 640px) {
+	body{ font-size:24px}
+
+}
+
+/* 最大宽度480PX */
+@media screen and (max-width: 480px) {
+	body{ background:#DEDCDD; font-size:18px}
+	em {
+	display: block;
+	padding-left: 25px;
+	height: 22px;
+	line-height: 22px;
+	margin-right: 10px;
+	float: right;
+	font-size: 16px; }
+	/* 瀑布流 */
+	.water_user{font-size:16px;}
+	.option_item{padding-left:16%;font-size:17px;}
+	.option_coll,.option_comt{background-size:auto 75%;}
+	.story{width:27%;}
+	
+}
+em.prise{ background-size:22px}
+em.share{ background-size:22px}
+em.rep{ background-size:22px}
+
+a.duarr_open{ width:22px; height:22px; background:url(../images/du_arr.png) no-repeat; display:inline-block; background-size:22px }
+a.duarr_close{ width:22px; height:22px; background:url(../images/du_arr.png) 0 -23px no-repeat; display:inline-block; }
+.replyUl h3{ font-size:18px}
+.replyUl p{ font-size:18px}
+}
+
+

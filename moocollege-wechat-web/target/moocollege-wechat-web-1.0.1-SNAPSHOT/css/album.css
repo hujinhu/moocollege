@@ -1,0 +1,264 @@
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */html {
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%
+}
+body {
+	margin: 0
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block
+}
+audio, canvas, progress, video {
+	display: inline-block;
+	vertical-align: baseline
+}
+audio:not([controls]) {
+	display: none;
+	height: 0
+}
+[hidden], template {
+display:none
+}
+a {
+	background: transparent
+}
+a:active, a:hover {
+	outline: 0
+}
+abbr[title] {
+	border-bottom: 1px dotted
+}
+b, strong {
+	font-weight: bold
+}
+dfn {
+	font-style: italic
+}
+h1 {
+	font-size: 2em;
+	margin: .67em 0
+}
+mark {
+	background: #ff0;
+	color: #000
+}
+small {
+	font-size: 80%
+}
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline
+}
+sup {
+	top: -0.5em
+}
+sub {
+	bottom: -0.25em
+}
+img {
+	border: 0
+}
+svg:not(:root) {
+	overflow: hidden
+}
+figure {
+	margin: 1em 40px
+}
+hr {
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	height: 0
+}
+pre {
+	overflow: auto
+}
+code, kbd, pre, samp {
+	font-family: monospace, monospace;
+	font-size: 1em
+}
+button, input, optgroup, select, textarea {
+	color: inherit;
+	font: inherit;
+	margin: 0
+}
+button {
+	overflow: visible
+}
+button, select {
+	text-transform: none
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer
+}
+button[disabled], html input[disabled] {
+	cursor: default
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+border:0;
+padding:0
+}
+input {
+	line-height: normal
+}
+input[type="checkbox"], input[type="radio"] {
+	box-sizing: border-box;
+	padding: 0
+}
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+height:auto
+}
+input[type="search"] {
+	-webkit-appearance: textfield;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box
+}
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+-webkit-appearance:none
+}
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: .35em .625em .75em
+}
+legend {
+	border: 0;
+	padding: 0
+}
+textarea {
+	overflow: auto
+}
+optgroup {
+	font-weight: bold
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+td, th {
+	padding: 0
+}
+body {
+	background-color: #EEEEEE;
+}
+#album-head {
+	max-width:640px;
+	margin: 0 auto;
+}
+#album-head img {
+	width: 100%;
+}
+#album-body {
+	max-width: 640px;
+	margin: 0 auto;
+}
+#album-body ul#album-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#album-body ul#album-list:after {
+	content: " ";
+	display: table;
+	overflow: hidden;
+	clear: both;
+}
+#album-body ul section {
+	display: block;
+	width: 100%;
+	border-radius: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	box-shadow: 1px 2px 3px 0 #C9C9C9;
+	background-color: #ffffff;
+	color: #333333;
+	text-decoration: none;
+}
+#album-body ul a p {
+	margin: .5em 0;
+}
+#album-body ul a span {
+	color: #999;
+	font-size: 14px;
+	line-height: 24px;
+}
+#album-body img {
+	width: 100%;
+}
+#album-body.oneliner {
+	padding: 10px 10px 0;
+}
+#album-body.pinterest ul a {
+	margin-bottom: 0px;
+}
+#album-body.pinterest {
+	position: relative;
+}
+#album-body.pinterest #album-list li {
+	width:152px;
+	display: none; /** 瀑布流防止初始化时图片闪动 **/
+	font-size: 0;
+}
+#album-body.pinterest #album-list {
+	position: relative;
+}
+#album-body ul#album-list li p {
+	background: #ffffff;
+	text-align: right;
+	padding: 0px 5px;
+}
+#album-list a.social-like {
+	color: #00aaf0;
+	float: none;
+	display: inline-block;
+	width: auto;
+}
+#album-list a.social-comment {
+	color: #00aaf0;
+	float: none;
+	display: inline-block;
+	width: auto;
+	margin-left: .5em;
+	float: right;
+}
+#album-list .icon-like {
+	width: 10px;
+	height: 10px;
+	background: url(../images/zan.png) no-repeat;
+	background-size: 10px auto;
+	margin-right:4px;
+	display: inline-block;
+}
+#album-list .icon-liked {
+	width: 16px;
+	height: 19px;
+	background-position: 0 -19px;
+}
+#album-list .icon-comment {
+	width: 18px;
+	height: 19px;
+	background: url(../images/icon01.png) no-repeat;
+	background-size: 18px auto;
+	vertical-align: middle;
+	display: inline-block;
+	background-position: 0 -101px;
+	margin-right: 3px;
+}
+.zan-link, .zan-link:hover {
+	padding: 0 4px;
+	color: #fffcff;
+	height: 18px;
+	line-height: 18px;
+	font-size: 12px;
+	background: rgba(10, 10, 10, 0.5);
+	border-radius: 4px;
+	
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	color: #fff
+}

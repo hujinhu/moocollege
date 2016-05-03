@@ -1,0 +1,33 @@
+@charset "utf-8";
+/*2014.3.11 生日有礼*/
+.bg_orange{background:#fbb64e}
+.zhuanpan_pd{padding:18px 11px 10px}
+.zhuanpan_cont{margin:17px auto; width:300px;max-width:300px;height:302px;overflow:hidden;}
+.zhuanpan_arrow{ width:100px; height:128px;margin:-230px auto 0;}
+.zhuanpan_txt{border:1px #ce7b3a dashed; padding:8px 12px 12px}
+.ft_vermeil{color:#740512}
+/*2014.3.11 生日有礼抽奖提示*/
+.ft_orange{color:#ff6600}
+.bg_orange01{background:#ff6600}
+.btn04{ height:31px; line-height:30px; border-radius:4px; text-align:center;}
+.windown_pop{ position:fixed;top:35%; left:10%;display:none; width:80%;background:#fafafa;z-index:10000; background:#fff}
+.windown_pop .hd{padding:12px 0 10px;border-bottom:1px #ffccaa solid}
+.windown_pop .close{position:absolute;right:2px; cursor:pointer;top:2px;}
+.windown_pop .bd{padding:9px 0 17px}
+.windown_bg{position: absolute;top: 0%;left: 0%;width:100%;height: 100%;background:#000;z-index:998;-moz-opacity: 0.7;opacity:0.7;filter: alpha(opacity=70);display:none}
+/*流量币抽奖*/
+table.jpin{ width:294px; height:294px; margin:0 auto;}
+table.jpin tr td{ width:92px; height:92px; background:#faebcc; text-align:center; display:inline-block; margin:3px; position:relative}
+table.jpin tr td.yellow{ width:92px; height:92px; background:#f86e12; text-align:center; display:inline-block; margin:3px;}
+.cusor{ cursor:pointer;}
+.hw92{ height:92px; width:92px;}
+.cj_dw01{ position:absolute; left:10px; top:25px;}
+/*流量币兑换结果及条件*/
+.sure03{ width:119px; height:111px; background-position:0 -232px;}
+.sure04{ width:119px; height:111px; background-position:0 -349px;}
+
+.name {height:50px; margin:10px 0 17px; overflow:hidden}
+.name li span{ display:inline-block}
+.name li span:first-child{ width:20%}
+.name li span:nth-child(2){ width:35%}
+.name li span:last-child{ width:40%}

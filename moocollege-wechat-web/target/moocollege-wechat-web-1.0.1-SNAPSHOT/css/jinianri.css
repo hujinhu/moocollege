@@ -1,0 +1,49 @@
+/*绾康鏃�/
+.jl-list li { padding:0 10px}
+.jl-list li span{ width:33.33%; float:left}
+/*绁濈鍥炬爣*/
+.zf-list a{ padding-right:15px; width:25%; float:left; text-align:center}
+.zf-list a:last-child{ margin-right:0}
+.zf-list a p{width:61px; height:61px; position:relative}
+.zf-list a p.hongb{background:#f45f70;}
+.zf-list a p.hua{background:#fb724f;}
+.zf-list a p.qian{background:#fb7d14;}
+.zf-list a p.sugar{background:#fabe32;}
+.zf-list a p.cake{background:#ff9900;}
+.zf-list a p.egg{background:#911900;}
+.zf-list a p.car{background:#70b3f7;}
+
+
+.zf-list .cur:after{content: "";background: url(../images/gou.png) no-repeat;background-size:22px auto;width:22px; height:22px; position:absolute;bottom:-2px;right:0;}
+.zf-icons{background: url(../images/zhufu.png) no-repeat; background-size:290px auto;}
+.ico-hongb{ width:60px; height:61px; background-position:0 0}
+.ico-hua{ width:61px; height:61px;background-position:-76px 0}
+.ico-qian{ width:61px; height:61px;background-position:-153px 0}
+.ico-sugar{ width:60px; height:61px;background-position:-230px 0}
+.ico-cake{ width:61px; height:61px;background-position:0 -62px}
+.ico-egg{ width:61px; height:61px;background-position:-76px -62px}
+.ico-car{ width:61px; height:61px;background-position:-153px -62px}
+
+
+.ico-hongb-cur{background-position:0 -69px}
+.ico-hua-cur{background-position:-76px -69px}
+.ico-qian-cur{background-position:-153px -69px}
+.ico-sugar-cur{background-position:-230px -69px}
+.ico-cake-cur{background-position:0 -205px}
+.ico-egg-cur{background-position:-76px -205px}
+.ico-car-cur{background-position:-153px -205px}
+
+@media screen and (max-device-width: 480px) {
+	.dwpic2 {
+    top:58%
+  }
+}
+@media screen and (max-device-width: 640px) {
+	.dwpic2 {
+    top:58.7%
+  }
+}
+
+
+
+
