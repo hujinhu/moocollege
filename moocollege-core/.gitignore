@@ -1,0 +1,10 @@
+/target/
+.project
+.class
+.war
+.ear
+/classes/*
+.log
+.DS_Store
+.classpath
+/.settings/*
