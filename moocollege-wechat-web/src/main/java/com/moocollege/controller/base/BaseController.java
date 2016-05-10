@@ -40,7 +40,7 @@ public class BaseController {
 	 * 获取token
 	 */
 	public String getAccessToken() {
-		TokenResult tokenResult = QyTokenUtil.getTokenByCorpId(corpId, secret);
+		TokenResult tokenResult = QyTokenUtil.getAccessToken();
 		return tokenResult.getAccess_token();
 	}
 

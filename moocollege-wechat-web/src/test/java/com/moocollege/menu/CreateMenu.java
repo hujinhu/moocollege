@@ -35,10 +35,7 @@ import com.moocollege.service.IQyMenuService;
 public class CreateMenu extends AbstractTransactionalJUnit4SpringContextTests {
 	private static Log log = LogFactory.getLog(CreateMenu.class);
 
-	@Value(value = "#{commonConfig[corpId]}")
-	private String corpId;
-	@Value(value = "#{commonConfig[secret]}")
-	private String secret;
+ 
 	@Value(value = "#{commonConfig[domain]}")
 	private String domain;
 
@@ -49,7 +46,8 @@ public class CreateMenu extends AbstractTransactionalJUnit4SpringContextTests {
 
 	@Test
 	public void install() throws Exception {
-		TokenResult tokenResult = QyTokenUtil.getTokenByCorpId(corpId, secret);
+		TokenResult tokenResult = QyTokenUtil.getAccessToken();
+		System.out.println(tokenResult.getAccess_token());
 		List<QyApp> listAllApp = qyAppService.listByType(0);//只查消息型应用
 		List<QyMenu> listAllMenu = qyMenuService.listAll();
 		Map<Integer, List<QyMenu>> listAllMenuMap = Collections3.extractToMapList(listAllMenu, "appId");

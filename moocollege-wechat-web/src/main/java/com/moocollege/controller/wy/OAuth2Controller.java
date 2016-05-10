@@ -1,58 +1,79 @@
 package com.moocollege.controller.wy;
 
+import java.io.UnsupportedEncodingException;
+
 import javax.servlet.http.HttpServletRequest;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import team.ascent.util.Constant;
+import team.ascent.util.weixin.QyTokenUtil;
+import team.ascent.util.weixin.QyUserUtil;
+import team.ascent.util.weixin.response.user.UserOauthResponse;
+
+import com.moocollege.controller.base.BaseController;
 
 /**
  * OAuth2 处理控制器
- * @author Sunlight
+ * @author <a href="mailto:1933549135@qq.com">Amr</a>
+ * @date  2016年5月9日 下午2:16:30 
  */
 @Controller
-@RequestMapping("oAuth2")
-public class OAuth2Controller {
-	private static Log log = LogFactory.getLog(OAuth2Controller.class);
+@RequestMapping("/oAuth2")
+public class OAuth2Controller extends BaseController {
+	private final Logger log = LoggerFactory.getLogger(this.getClass());
+
 	/**
-	 * 根据code获取Userid后跳转到需要带用户信息的最终页面
-	 * @param request
-	 * @param code  获取微信重定向到自己设置的URL中code参数
-	 * @param oauth2url 跳转到最终页面的地址
-	 * @return
+	 * step1.构造微信跳转地址,带上原url
 	 */
-	@RequestMapping("/oauth2url")
-	public String Oauth2MeUrl(HttpServletRequest request, @RequestParam String code, @RequestParam String corpId, @RequestParam String agentId, @RequestParam String oauth2url) {
-		log.error("########"+request.getHeader("referer"));
-		log.error("微信认证后的地址，从code中获取用户信息并保存");
-//		if (StringUtil.isNotEmpty(corpId) && StringUtil.isNotEmpty(code)) {
-//			QyDevelopInfoCriteria qyDevelopInfoCriteria = new QyDevelopInfoCriteria();
-//			qyDevelopInfoCriteria.createCriteria().andCorpIdEqualTo(corpId);
-//			List<QyDevelopInfo> qyDevelopInfoList = qyDevelopService.selectByExample(qyDevelopInfoCriteria);
-//			if (qyDevelopInfoList.size() > 0) {
-//				try {
-//					JSONObject obj_ = JSONObject.fromObject(QYPlatformUtil.getUserInfoByCode(qyDevelopInfoList.get(0).getCompanyId(), code, agentId));
-//					String UserId = String.valueOf( obj_.get("UserId"));
-//					if (StringUtil.isNotEmpty(UserId)) {
-//						HttpSession session = request.getSession();
-//						session.setAttribute(Constant.KEY_ACCOUNT, UserId);
-//						session.setAttribute(Constant.KEY_CORPID,corpId);
-//						session.setAttribute(Constant.KEY_COMPANYID, qyDevelopInfoList.get(0).getCompanyId());
-//						System.out.println("从微信成功获取到用户id"+UserId);
-//					}
-//				} catch (Exception e) {
-//					e.printStackTrace();
-//				}
-//			}
-//		}
-		// 这里简单处理,存储到session中
-		return "forward:" + oauth2url;
+	@RequestMapping("/step1")
+	public String Oauth2API(HttpServletRequest request, @RequestParam String resultUrl) {
+		String CropId = this.getCorpId();
+		String redirectUrl = "";
+		if (resultUrl != null) {
+			resultUrl = "http://" + request.getServerName() + "/oAuth2/step2?oauth2url=" + resultUrl + "";
+			redirectUrl = oAuth2Url(CropId, resultUrl);
+		}
+		return "redirect:" + redirectUrl;
 	}
 
-	 
+	/**
+	 * step2.微信回调,带了code,获取完用户信息,再跳转原URL
+	 */
+	@RequestMapping(value = "/step2")
+	public String Oauth2MeUrl(HttpServletRequest request, @RequestParam String code, @RequestParam String oauth2url) {
+		UserOauthResponse userOauthResponse = QyUserUtil.getUserInfo(QyTokenUtil.getAccessToken().getAccess_token(), code);
+		if (userOauthResponse != null && userOauthResponse.getUserId() != null) {
+			log.info("_根据CODE成功获取到用户信息 userId:{}", userOauthResponse.getUserId());
+			// 处理业务
+			// step1. 根据userId获取业务中关联的用户
+			// step2.根据userId获取用户信息
+			// step3.存session
+			request.getSession().setAttribute(Constant.USERID, userOauthResponse.getUserId());
+		}
+		return "redirect:" + oauth2url;
+	}
+
+	/**
+	 * 构造带员工身份信息的URL
+	 * @param corpid  企业id
+	 * @param redirect_uri    授权后重定向的回调链接地址，请使用urlencode对链接进行处理
+	 * @param state 重定向后会带上state参数，企业可以填写a-zA-Z0-9的参数值
+	 * @return
+	 */
+	private String oAuth2Url(String corpid, String redirect_uri) {
+		try {
+			redirect_uri = java.net.URLEncoder.encode(redirect_uri, "utf-8");
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
+		String oauth2Url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=" + corpid + "&redirect_uri=" + redirect_uri +"&response_type=code&scope=snsapi_base&state=sunlight#wechat_redirect";
+		log.info("oauth2Url={}", oauth2Url);
+		return oauth2Url;
+	}
 
 }

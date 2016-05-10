@@ -1,5 +1,8 @@
 package team.ascent.util.weixin.process;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Service;
@@ -7,7 +10,14 @@ import org.springframework.transaction.annotation.Transactional;
 
 import team.ascent.util.weixin.InstructionDTO;
 import team.ascent.util.weixin.enumeration.EventType;
+import team.ascent.util.weixin.request.RequestDTO;
+import team.ascent.util.weixin.response.ArticleItem;
+import team.ascent.util.weixin.response.ResponseUtil;
 
+/**
+ * @author <a href="mailto:1933549135@qq.com">Amr</a>
+ * @date  2016年5月9日 下午10:28:29 
+ */
 @Service
 @Transactional(readOnly = false)
 public class EventProcessor implements IProcessor<InstructionDTO>{
@@ -31,6 +41,7 @@ public class EventProcessor implements IProcessor<InstructionDTO>{
 		case view:
 			break;
 		case scancode_push:
+			event_scancode_push(io);
 			break;
 		case scancode_waitmsg:
 			break;
@@ -47,12 +58,22 @@ public class EventProcessor implements IProcessor<InstructionDTO>{
 		}
 	}
 
+	
+	/**
+	 * 扫码推送事件 
+	 * @param io 
+	 */
+	private void event_scancode_push(InstructionDTO io) {
+		log.info("扫码推送事件!");
+	}
+
 	/**
 	 * 取消关注
 	 *
 	 * @param io
 	 */
 	private void event_Unsubscribe(InstructionDTO io) {
+		log.info("取消了关注");
 		// 只处理取消企业号(agentId为0)的事件
 		if (io.getRequest().getAgentID().equals(0)) {
 //			QyUserAppInfo qyUserApp = qyUserAppInfoService.getUserAppInfo(io.getRequest().getToUserName(),
@@ -72,37 +93,29 @@ public class EventProcessor implements IProcessor<InstructionDTO>{
 	 * 点击菜单
 	 */
 	private void event_Click(InstructionDTO io) {
-
-//		RequestDTO request = io.getRequest();
-//		if ("DAKA".equals(request.getEventKey())) {
-//			Integer agentId = Integer.valueOf(request.getAgentID());
-//			QyUserAppInfo qyUserApp = qyUserAppInfoService.getCompanyAndAppId(request.getToUserName(),
-//					String.valueOf(agentId));
-//			if (qyUserApp != null && qyUserApp.getAppId() != null && qyUserApp.getAppId() != 0) {
-//				ResponseUtil.responseText(io.getResponse(), "请联系管理员升级考勤应用");
-//			} else {
-//				ResponseUtil.responseText(io.getResponse(), "管理员暂未安装此应用");
-//			}
-//		} else if ("QDAO".equals(request.getEventKey())) {
-//			Integer agentId = Integer.valueOf(request.getAgentID());
-//			QyUserAppInfo qyUserApp = qyUserAppInfoService.getCompanyAndAppId(request.getToUserName(),
-//					String.valueOf(agentId));
-//			if (qyUserApp != null && qyUserApp.getAppId() != null && qyUserApp.getAppId() != 0) {
-//				ResponseUtil.responseText(io.getResponse(), "请联系管理员升级考勤应用");
-//			} else {
-//				ResponseUtil.responseText(io.getResponse(), "管理员暂未安装此应用");
-//			}
-//		}
-
+		log.info("点击了菜单");
+		//ResponseUtil.responseText(io.getResponse(), "点击了按钮,再给你个图文消息");
+		RequestDTO request = io.getRequest();
+		if ("123".equals(request.getEventKey())) {
+			List<ArticleItem> items = new ArrayList<ArticleItem>();
+			ArticleItem ai = new ArticleItem();
+			ai.setDescription("点击进入百度");
+			ai.setPicUrl("http://b.zol-img.com.cn/soft/6/320/cegA2QuijOjy.jpg");
+			ai.setTitle("推送图文示例");
+			ai.setUrl("www.baidu.com");
+			items.add(ai);
+			ResponseUtil.responseNews(io.getResponse(), items);
+		}
 	}
 
 	/**
 	 * 上报地理位置
 	 */
 	private void event_Location(InstructionDTO io) {
-		log.error("用户上报位置");
+		log.info("用户上报位置");
 		try {
-//			RequestDTO request = io.getRequest();
+			RequestDTO request = io.getRequest();
+			
 //
 //			Integer agentId = Integer.valueOf(request.getAgentID());
 //			QyUserAppInfo qyUserApp = qyUserAppInfoService.getCompanyAndAppId(request.getToUserName(),
@@ -132,6 +145,7 @@ public class EventProcessor implements IProcessor<InstructionDTO>{
 	 * 关注事件
 	 */
 	private void event_Subscribe(InstructionDTO io) {
+		log.info("关注了企业号");
 		try {
 //			QyUserAppInfo qyUserApp = qyUserAppInfoService.getUserAppInfo(io.getRequest().getToUserName(),
 //					io.getRequest().getAgentID());

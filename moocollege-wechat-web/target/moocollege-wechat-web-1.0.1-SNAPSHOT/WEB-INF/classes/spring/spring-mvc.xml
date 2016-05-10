@@ -53,6 +53,7 @@
 		<mvc:interceptor>
 			<mvc:mapping path="/**" />
 			<mvc:exclude-mapping path="/qyEntrance/**"/>
+			<mvc:exclude-mapping path="/oAuth2/**"/>
 			<bean class="com.moocollege.intercepter.UserOperationInterceptor">
 			</bean>
 		</mvc:interceptor>

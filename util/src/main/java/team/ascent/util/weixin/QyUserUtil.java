@@ -2,7 +2,6 @@ package team.ascent.util.weixin;
 
 import team.ascent.util.HttpUtil;
 import team.ascent.util.JsonUtil;
-import team.ascent.util.common.Encodes;
 import team.ascent.util.weixin.response.user.UserOauthResponse;
 
 public class QyUserUtil {
@@ -11,16 +10,16 @@ public class QyUserUtil {
 	private static final String QY_WEIXIN_PREFIX = "https://qyapi.weixin.qq.com/cgi-bin/";
 	private static JsonUtil json = JsonUtil.nonDefaultMapper();
 
-	/** 
-     * 构造带员工身份信息的URL 
-     * @param corpid    企业id 
-     * @param redirectUrl   授权后回调地址
-     * @return 
-     */  
-    public static String assembleOauthUrl(String corpid, String redirectUrl) {  
-        return String.format("%s?appid=%s&redirect_uri=%s&response_type=code&scope=snsapi_base&state=sunlight#wechat_redirect", 
-        		QY_WECHAT_OAUTH_URL, corpid, Encodes.urlEncode(redirectUrl));
-    }  
+//	/** 
+//     * 构造带员工身份信息的URL 
+//     * @param corpid    企业id 
+//     * @param redirectUrl   授权后回调地址
+//     * @return 
+//     */  
+//    public static String assembleOauthUrl(String corpid, String redirectUrl) {  
+//        return String.format("%s?appid=%s&redirect_uri=%s&response_type=code&scope=snsapi_base&state=sunlight#wechat_redirect", 
+//        		QY_WECHAT_OAUTH_URL, corpid, Encodes.urlEncode(redirectUrl));
+//    }  
 	
     /**
      * 获取用户信息

@@ -1,18 +1,18 @@
 package team.ascent.util.weixin.response.user;
 
 import team.ascent.util.StringUtil;
+import team.ascent.util.weixin.response.WeiXinResult;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class UserOauthResponse {
+public class UserOauthResponse extends WeiXinResult {
 
 	@JsonProperty("UserId")
 	private String userId;
 	@JsonProperty("DeviceId")
 	private String deviceId;
 	
-	private String errcode;
-    private String errmsg;
+ 
     
     public boolean isSuccess() {
     	return StringUtil.isNotBlank(userId);
@@ -29,17 +29,5 @@ public class UserOauthResponse {
 	}
 	public void setDeviceId(String deviceId) {
 		this.deviceId = deviceId;
-	}
-	public String getErrcode() {
-		return errcode;
-	}
-	public void setErrcode(String errcode) {
-		this.errcode = errcode;
-	}
-	public String getErrmsg() {
-		return errmsg;
-	}
-	public void setErrmsg(String errmsg) {
-		this.errmsg = errmsg;
 	}
 }

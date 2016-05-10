@@ -9,8 +9,8 @@ import java.util.concurrent.TimeUnit;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -39,12 +39,13 @@ import com.moocollege.service.IQyAppService;
 @Controller
 @RequestMapping("/qyEntrance")
 public class QYEntranceController extends BaseController {
-	private static Log log = LogFactory.getLog(QYEntranceController.class);
+    private final Logger log = LoggerFactory.getLogger(this.getClass());
+
 	@Autowired
 	private IQyAppService qyAppService;
 	@RequestMapping(value = "/index")
 	public void proceed(HttpServletRequest request, HttpServletResponse response, @RequestParam(value = "appId", required = true)  int appId) throws IOException, AesException {
-		log.error("手动安装应用,回调信息 应用ID:"+appId);
+		log.error("应用回调信息 应用ID:"+appId);
 		QyApp app = qyAppService.getByAppId(appId);
 		if (app!=null) {
 			WXBizMsgCrypt wxcpt = new WXBizMsgCrypt(app.getToken(),app.getAesKey(), this.getCorpId());
@@ -67,7 +68,7 @@ public class QYEntranceController extends BaseController {
 				String sEncryptMsg = wxcpt.EncryptMsg(sRespData, sReqTimeStamp, sReqNonce);
 				response(response, sEncryptMsg);
 			} catch (Exception e) {
-				log.error(e);
+				log.error("异常",e);
 				response(response, "");
 			}
 		}
@@ -88,7 +89,7 @@ public class QYEntranceController extends BaseController {
 			inStream.close();
 		try {
 			String sMsg = wxcpt.DecryptMsg(sReqMsgSig, sReqTimeStamp, sReqNonce, requestXml);
-//			log.error("回调信息："+sMsg);
+			log.info("回调信息："+sMsg);
 			RequestDTO requestDTO = JaxbMapper.fromXml(sMsg, RequestDTO.class);
 			ResponseDTO response = new ResponseDTO(requestDTO);
 			InstructionDTO io = new InstructionDTO(requestDTO, response);
@@ -98,7 +99,7 @@ public class QYEntranceController extends BaseController {
 			io = ft.get(4800, TimeUnit.MILLISECONDS);
 			return io;
 		} catch (Exception e) {
-			log.error(e);
+			log.error("异常",e);
 			return null;
 		}
 
@@ -117,7 +118,7 @@ public class QYEntranceController extends BaseController {
 			sEchoStr = wxcpt.VerifyURL(sVerifyMsgSig, sVerifyTimeStamp, sVerifyNonce, sVerifyEchoStr);
 			response(response, sEchoStr);
 		} catch (AesException e) {
-			log.error(e);
+			log.error("异常",e);
 			response(response, "");
 		}
 		
